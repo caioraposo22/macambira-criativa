@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Macambira Criativa | Sites, web apps e tráfego pago no Recife</title>
+<meta name="description" content="Agência digital do Recife. Criação de sites e landing pages, web apps sob medida e gestão de tráfego pago, com branding e design. De Pernambuco pro mundo.">
+<link rel="canonical" href="https://macambiracriativa.com.br/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#17120E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Macambira Criativa">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Macambira Criativa | Sites, web apps e tráfego pago no Recife">
+<meta property="og:description" content="Agência digital do Recife. Criação de sites e landing pages, web apps sob medida e gestão de tráfego pago, com branding e design. De Pernambuco pro mundo.">
+<meta property="og:url" content="https://macambiracriativa.com.br/">
+<meta property="og:image" content="https://macambiracriativa.com.br/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Macambira Criativa | Sites, web apps e tráfego pago no Recife">
+<meta name="twitter:description" content="Agência digital do Recife. Criação de sites e landing pages, web apps sob medida e gestão de tráfego pago, com branding e design. De Pernambuco pro mundo.">
+<meta name="twitter:image" content="https://macambiracriativa.com.br/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+/* Layout: muro de cobogó. Blocos de cor chapada empilhados como folhetos de cordel no barbante;
+   grade modular, réguas grossas de tinta e cantos em "folha" (o módulo do cobogó) em botões e capas. */
+:root{
+  /* pares fixos, usados sobre blocos de cor chapada */
+  --tinta:#17120E; --papel:#FFFBF0; --sol:#FFC21A; --mar:#1438E0;
+  --sol-muted:#3F3110; --mar-muted:#D3DAFF; --mar-line:rgba(255,251,240,.38);
+  --zap:#0E7A41;
+  /* semânticos, tema claro */
+  --bg:#FFFBF0; --fg:#17120E; --muted:#5C5247; --surface:#F5ECD6; --line:#17120E; --hair:rgba(23,18,14,.16);
+  --urucum:#D9340F; --on-urucum:#FFFBF0; --accent:#1438E0;
+  --btn-bg:#17120E; --btn-fg:#FFFBF0;
+  --hero-bg:#FFC21A; --hero-fg:#17120E; --hero-muted:#3F3110; --hero-sun:#D9340F; --hero-wall:rgba(23,18,14,.15);
+  --foot-bg:#17120E; --foot-fg:#FFFBF0; --foot-muted:#B9AD99; --foot-line:#3D3228;
+  /* tipo */
+  --display:"Bricolage Grotesque","Arial Narrow",Impact,sans-serif;
+  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15110D; --fg:#FBF3DE; --muted:#B5A995; --surface:#211A14; --line:#57493B; --hair:rgba(251,243,222,.16);
+    --urucum:#FF5A36; --on-urucum:#17120E; --accent:#FFC21A;
+    --btn-bg:#FFC21A; --btn-fg:#17120E;
+    --hero-bg:#15110D; --hero-fg:#FBF3DE; --hero-muted:#B5A995; --hero-sun:#FFC21A; --hero-wall:rgba(251,243,222,.11);
+    --foot-bg:#0C0906; --foot-fg:#FBF3DE; --foot-muted:#A99D8A; --foot-line:#3D3228;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15110D; --fg:#FBF3DE; --muted:#B5A995; --surface:#211A14; --line:#57493B; --hair:rgba(251,243,222,.16);
+  --urucum:#FF5A36; --on-urucum:#17120E; --accent:#FFC21A;
+  --btn-bg:#FFC21A; --btn-fg:#17120E;
+  --hero-bg:#15110D; --hero-fg:#FBF3DE; --hero-muted:#B5A995; --hero-sun:#FFC21A; --hero-wall:rgba(251,243,222,.11);
+  --foot-bg:#0C0906; --foot-fg:#FBF3DE; --foot-muted:#A99D8A; --foot-line:#3D3228;
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1.0625rem/1.55 var(--body);overflow-x:clip;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ul,ol,dl,dd,figure,fieldset{margin:0;padding:0}
+fieldset{border:0;min-width:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+section[id],main[id]{scroll-margin-top:84px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* superfícies: cada bloco redefine os tokens que os componentes leem */
+.hero{--bg:var(--hero-bg);--fg:var(--hero-fg);--muted:var(--hero-muted)}
+.b-mar{--bg:var(--mar);--fg:var(--papel);--muted:var(--mar-muted);--line:var(--mar-line);--btn-bg:var(--sol);--btn-fg:var(--tinta);--accent:var(--sol)}
+.b-sol{--bg:var(--sol);--fg:var(--tinta);--muted:var(--sol-muted);--line:var(--tinta);--btn-bg:var(--tinta);--btn-fg:var(--sol);--accent:var(--mar)}
+.b-tinta{--bg:var(--foot-bg);--fg:var(--foot-fg);--muted:var(--foot-muted);--line:var(--foot-line);--btn-bg:var(--sol);--btn-fg:var(--tinta);--accent:var(--sol)}
+.b-surf{--bg:var(--surface)}
+.hero,.b-mar,.b-sol,.b-tinta,.b-surf{background:var(--bg);color:var(--fg)}
+
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:var(--gutter)}
+.sec{padding-block:clamp(64px,9vw,128px)}
+
+/* tipo */
+h1,h2,h3,.mega{font-family:var(--display);font-weight:800;font-stretch:84%;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(2.6rem,7.4vw,6.25rem);line-height:1;font-stretch:80%}
+h2{font-size:clamp(2rem,5.2vw,4rem);line-height:1.04}
+.mega{font-size:clamp(2.2rem,6.4vw,5.25rem);line-height:1.02}
+h3{font-size:1.35rem;line-height:1.1;font-weight:700;letter-spacing:-.01em}
+.rot{font:500 .78rem/1.3 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.lead{font-size:clamp(1.08rem,1.6vw,1.3rem);line-height:1.5;color:var(--muted);max-width:56ch}
+.falta{font:500 .82em/1.4 var(--mono);background:var(--sol);color:var(--tinta);padding:.12em .4em;overflow-wrap:anywhere}
+
+/* botões: canto em folha */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:.95em 1.5em;font:700 1rem/1.15 var(--body);text-decoration:none;text-align:center;
+  background:var(--btn-bg);color:var(--btn-fg);border:2px solid var(--btn-bg);border-radius:1.25em 0 1.25em 0;cursor:pointer;transition:background .18s,color .18s,border-color .18s,border-radius .18s,transform .12s}
+@media (hover:hover){.btn:hover{background:var(--urucum);border-color:var(--urucum);color:var(--on-urucum);border-radius:0 1.25em 0 1.25em}}
+.btn:active{background:var(--urucum);border-color:var(--urucum);color:var(--on-urucum);border-radius:0 1.25em 0 1.25em;transform:scale(.96)}
+.btn-o{background:transparent;color:var(--fg);border-color:currentColor}
+@media (hover:hover){.btn-o:hover{background:var(--fg);color:var(--bg);border-color:var(--fg)}}
+.btn-o:active{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn svg{flex:none}
+
+/* topo */
+.topo{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:2px solid var(--line)}
+.topo-in{display:flex;flex-wrap:wrap;align-items:center;gap:0 clamp(12px,1.8vw,24px);min-height:66px}
+.marca{display:inline-flex;align-items:center;gap:.45em;text-decoration:none;font:800 1.45rem/1 var(--display);font-stretch:84%;font-variation-settings:"opsz" 96;letter-spacing:-.005em}
+.marca svg{color:var(--urucum);flex:none}
+.marca .miolo{fill:var(--bg)}
+.marca b{font:500 .46em/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-left:.4em;padding:.36em .5em;background:var(--fg);color:var(--bg);border-radius:.6em 0 .6em 0;vertical-align:.22em}
+.topo .marca{font-size:clamp(1.05rem,2.1vw,1.45rem)}
+@media (max-width:440px){.topo .marca svg{width:24px;height:24px}}
+@media (max-width:380px){.topo .marca{font-size:.98rem}}
+.menu{margin-left:auto;display:flex;align-items:center;gap:clamp(10px,1.9vw,32px)}
+.menu .lnk{font-weight:600;font-size:clamp(.9rem,1.45vw,1.0625rem);white-space:nowrap;text-decoration:none;padding-block:6px;border-bottom:2px solid transparent}
+.menu .lnk:hover{border-bottom-color:var(--urucum)}
+.topo-cta{padding:.7em 1.2em;font-size:clamp(.85rem,1.4vw,.95rem);white-space:nowrap}
+@media (max-width:879px){
+  /* sem menu sanduíche: marca e botão na primeira linha, links listados na segunda */
+  .topo-in{padding-block:9px 0;row-gap:7px}
+  .topo-cta{order:2;margin-left:auto;font-size:.8rem;padding:.65em 1em}
+  .menu{order:3;flex-basis:100%;margin-left:0;justify-content:space-between;gap:6px;overflow-x:auto;scrollbar-width:none;border-top:1px solid var(--hair)}
+  .menu::-webkit-scrollbar{display:none}
+  .menu .lnk{font-size:clamp(.76rem,3.5vw,.92rem);padding-block:10px 9px}
+  section[id],main[id]{scroll-margin-top:120px}
+}
+@media (max-width:349px){.topo-cta{display:none}}
+
+/* hero */
+.hero{border-bottom:2px solid var(--tinta)}
+.hero-in{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,64px);align-items:center;padding-block:clamp(40px,6.5vw,92px)}
+.hero-txt{display:grid;gap:clamp(18px,2.4vw,28px);justify-items:start;min-width:0}
+.hero .rot{color:var(--fg)}
+.selo{display:inline-block;background:var(--fg);color:var(--bg);padding:.05em .22em .11em;margin-top:.14em;transform:rotate(-2deg);border-radius:0 .32em 0 .32em}
+.hero .lead{color:var(--muted);max-width:50ch}
+.acoes{display:flex;flex-wrap:wrap;gap:12px}
+.estados{font:500 .78rem/1.6 var(--mono);letter-spacing:.06em;color:var(--muted)}
+.hero-arte{width:100%;max-width:520px;justify-self:end;display:grid;gap:12px;min-width:0}
+.hero-arte canvas{display:block;width:100%;aspect-ratio:1;max-width:100%}
+.hero-arte figcaption{font:400 .74rem/1.5 var(--mono);color:var(--muted)}
+@media (max-width:700px){
+  .hero-in{grid-template-columns:minmax(0,1fr)}
+  .hero-arte{justify-self:start;max-width:440px}
+}
+
+/* faixa corrida */
+.faixa{overflow:hidden;white-space:nowrap;padding-block:15px;border-bottom:2px solid var(--line)}
+.faixa-trilho{display:inline-flex;animation:rolar 34s linear infinite}
+.faixa span{font:700 clamp(1rem,2vw,1.35rem)/1 var(--display);font-stretch:84%;letter-spacing:.01em;text-transform:uppercase;padding-right:.9em}
+.faixa b{color:var(--sol);font-weight:400;padding-right:.9em}
+@keyframes rolar{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.faixa-trilho{animation:none}}
+
+/* cabeçalho de seção */
+.cab{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.cab .rot{grid-column:1/-1}
+@media (max-width:820px){.cab{grid-template-columns:minmax(0,1fr)}}
+
+/* serviços */
+.serv{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,1.5fr) auto;gap:20px clamp(20px,3vw,40px);align-items:start;padding-block:clamp(26px,3.4vw,40px);border-top:2px solid var(--line)}
+.serv:last-child{border-bottom:2px solid var(--line)}
+.serv h3{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;line-height:1;padding-top:.12em}
+.serv-txt{display:grid;gap:16px;min-width:0}
+.serv-txt p{max-width:54ch}
+.serv ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px 24px;color:var(--muted);font-size:.98rem}
+.serv li{display:grid;grid-template-columns:8px minmax(0,1fr);gap:12px;align-items:baseline}
+.serv li::before{content:"";width:8px;height:8px;background:var(--urucum);transform:translateY(-1px)}
+.mot{width:72px;height:72px;display:grid;place-items:center;border-radius:0 22px 0 22px}
+.mot svg{width:44px;height:44px;fill:currentColor}
+.mot-sol{background:var(--sol);color:var(--tinta)}
+.mot-mar{background:var(--mar);color:var(--papel)}
+.mot-uru{background:var(--urucum);color:var(--on-urucum)}
+.mot-tin{background:var(--foot-bg);color:var(--sol);border:2px solid var(--foot-line)}
+@media (max-width:980px){
+  .serv{grid-template-columns:56px minmax(0,1fr);align-items:center}
+  .mot{width:56px;height:56px;border-radius:0 16px 0 16px}
+  .mot svg{width:34px;height:34px}
+  .serv-txt,.serv .btn{grid-column:1/-1}
+  .serv .btn{justify-self:start}
+}
+
+.mais{margin-top:28px;color:var(--muted)}
+.mais a,.faq details a,.volta,.proj .meta a{color:var(--fg);font-weight:700;text-decoration:underline;text-decoration-color:var(--urucum);text-decoration-thickness:2px;text-underline-offset:4px}
+.menu .lnk[aria-current="page"]{border-bottom-color:var(--urucum)}
+
+/* preços */
+.tab{width:100%;border-collapse:collapse;border-bottom:2px solid var(--line);font-variant-numeric:tabular-nums}
+.tab th,.tab td{text-align:left;vertical-align:top;padding:20px 20px 20px 0;border-top:2px solid var(--line);font-size:.98rem}
+.tab thead th{font:500 .74rem/1.3 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--muted);border-top:0;padding-block:0 12px}
+.tab tbody th{font:800 1.25rem/1.12 var(--display);font-stretch:88%;letter-spacing:-.01em;width:23%}
+.tab .val{font-weight:700}
+.tab td{color:var(--muted)}
+.tab td.val{color:var(--fg)}
+.tag{display:block;width:max-content;font:500 .68rem/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;background:var(--sol);color:var(--tinta);padding:.45em .65em;border-radius:.7em 0 .7em 0;margin-bottom:8px}
+.notas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px clamp(20px,3vw,40px);margin-block:clamp(32px,4vw,52px)}
+.nota{display:grid;gap:8px;align-content:start}
+.nota p{color:var(--muted);font-size:.98rem}
+@media (max-width:980px){
+  .tab thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .tab,.tab tbody,.tab tr,.tab tbody th,.tab td{display:block;width:auto}
+  .tab tr{border-top:2px solid var(--line);padding-block:22px}
+  .tab tbody th,.tab td{border:0;padding:0}
+  .tab tbody th{font-size:1.45rem;margin-bottom:12px}
+  .tab td{display:grid;grid-template-columns:minmax(0,8.5em) minmax(0,1fr);gap:12px;padding-block:6px}
+  .tab td::before{content:attr(data-l);font:500 .7rem/1.7 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+}
+@media (min-width:640px) and (max-width:980px){
+  .tab tbody{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+  .tab td{grid-template-columns:minmax(0,1fr);gap:2px;padding-block:8px}
+}
+@media (max-width:700px){.notas{grid-template-columns:minmax(0,1fr)}}
+
+/* nosso jeito */
+.jeito{display:grid;gap:clamp(22px,3vw,34px);justify-items:start}
+.jeito .mega{max-width:16ch}
+.jeito .lead{color:var(--fg);max-width:60ch}
+.pilares{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px clamp(20px,3vw,40px);width:100%;margin-block:clamp(16px,3vw,36px) 8px}
+.pilar{display:grid;gap:10px;align-content:start;border-top:2px solid var(--line);padding-top:18px}
+.pilar p{color:var(--muted);font-size:.98rem}
+@media (max-width:980px){.pilares{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.pilares{grid-template-columns:minmax(0,1fr)}}
+
+/* processo */
+.passos{list-style:none;counter-reset:passo;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px clamp(20px,3vw,40px)}
+.passos li{counter-increment:passo;display:grid;gap:10px;align-content:start;border-top:2px solid var(--line);padding-top:16px}
+.passos li::before{content:counter(passo,decimal-leading-zero);font:800 clamp(2.6rem,5vw,4rem)/.9 var(--display);font-stretch:78%;color:var(--urucum);font-variant-numeric:tabular-nums}
+.passos p{color:var(--muted);font-size:.98rem}
+@media (max-width:980px){.passos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.passos{grid-template-columns:minmax(0,1fr)}}
+
+/* projetos */
+.projs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px clamp(18px,2.6vw,32px)}
+.proj{display:grid;gap:12px;align-content:start;min-width:0}
+.capa{aspect-ratio:3/2;max-width:100%;overflow:hidden;border:2px solid var(--line);--r:44px;border-radius:0 var(--r) 0 var(--r)}
+.capa svg{display:block;width:100%;height:100%}
+a.capa{display:block}
+@media (hover:hover){.capa:hover{border-color:var(--urucum);border-radius:var(--r) 0 var(--r) 0}}
+.capa .t{fill:var(--tinta)}.capa .p{fill:var(--papel)}.capa .s{fill:var(--sol)}.capa .u{fill:var(--urucum)}.capa .m{fill:var(--mar)}.capa .z{fill:var(--zap)}
+.capa .h{fill:var(--tinta);opacity:.16}.capa .pk{fill:var(--papel);opacity:.45}.capa .pk2{fill:var(--papel);opacity:.22}
+.capa .ln{stroke:var(--tinta);stroke-width:3}
+.capa .lnk{fill:none;stroke:var(--tinta);stroke-width:3;stroke-linecap:round}
+.capa .alta{fill:none;stroke:var(--sol);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.capa text{fill:var(--tinta)}
+.capa .disp{font-family:var(--display);font-weight:800;font-stretch:84%;letter-spacing:-.01em}
+.capa .mono{font:500 10.5px var(--mono);letter-spacing:.06em}
+.capa .bd{font-family:var(--body);font-weight:600}
+.capa .bt{font-family:var(--body);font-weight:700;fill:var(--papel)}
+.capa .pf{fill:var(--papel)}
+.proj h3{font-size:1.5rem;font-weight:800;line-height:1.05}
+.proj .txt{color:var(--muted);font-size:.98rem}
+.proj .txt strong{color:var(--fg)}
+.proj ul{list-style:none;display:grid;gap:8px;color:var(--muted);font-size:.98rem}
+.proj li{display:grid;grid-template-columns:8px minmax(0,1fr);gap:12px;align-items:baseline}
+.proj li::before{content:"";width:8px;height:8px;background:var(--urucum);transform:translateY(-1px)}
+.proj .meta{border-top:2px solid var(--line);padding-top:12px;color:var(--fg)}
+.proj .meta .ver{display:inline-block;margin-top:10px}
+@media (max-width:820px){
+  .projs{grid-template-columns:minmax(0,1fr);gap:40px}
+  .proj{grid-template-columns:minmax(0,260px) minmax(0,1fr);column-gap:24px}
+  .proj .capa{grid-row:1 / span 5;align-self:start;--r:32px}
+  .proj > :not(.capa){grid-column:2}
+}
+@media (max-width:600px){
+  .proj{grid-template-columns:minmax(0,1fr)}
+  .proj .capa{grid-row:auto}
+  .proj > :not(.capa){grid-column:1}
+}
+
+/* briefing */
+.brief{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.brief form{display:grid;gap:28px;min-width:0}
+.brief legend{font:700 1.05rem/1.3 var(--body);margin-bottom:12px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative;display:inline-flex}
+.chip input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.chip > span{display:inline-block;padding:.7em 1.1em;border:2px solid var(--fg);border-radius:1em 0 1em 0;font-weight:600;line-height:1.2}
+.chip input:checked + span{background:var(--fg);color:var(--bg)}
+.chip input:focus-visible + span{outline:3px solid var(--accent);outline-offset:3px}
+.campos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.campo{display:grid;gap:6px;min-width:0}
+.campo label{font:700 .95rem/1.3 var(--body)}
+.campo input{width:100%;font:500 1.05rem/1.3 var(--body);color:var(--fg);background:transparent;border:0;border-bottom:2px solid var(--fg);border-radius:0;padding:10px 0}
+.campo input::placeholder{color:var(--muted);opacity:.75}
+.previa{--btn-bg:var(--sol);--btn-fg:var(--tinta);--accent:var(--sol);background:var(--tinta);color:var(--papel);border-radius:0 34px 0 34px;padding:clamp(22px,3vw,32px);display:grid;gap:18px;justify-items:start}
+.previa .rot{color:var(--sol)}
+.previa p.msg{font-size:1.12rem;line-height:1.5;overflow-wrap:anywhere}
+@media (max-width:860px){.brief{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.campos{grid-template-columns:minmax(0,1fr)}}
+
+/* faq */
+.faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(28px,5vw,80px);align-items:start}
+.faq-cab{display:grid;gap:18px;justify-items:start}
+.faq details{border-top:2px solid var(--line)}
+.faq details:last-child{border-bottom:2px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;font:700 clamp(1.12rem,1.9vw,1.4rem)/1.2 var(--display);font-stretch:90%;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.7rem/1 var(--mono);color:var(--urucum);flex:none;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:24px;max-width:62ch;color:var(--muted)}
+@media (max-width:860px){.faq{grid-template-columns:minmax(0,1fr)}}
+
+/* rodapé */
+.fim{display:grid;gap:clamp(22px,3vw,32px);justify-items:start;padding-block:clamp(64px,9vw,120px);border-bottom:2px solid var(--line)}
+.fim .mega{max-width:14ch}
+.fim .mega em{font-style:normal;color:var(--sol)}
+.rodape{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:36px clamp(24px,4vw,64px);padding-block:clamp(40px,5vw,64px)}
+.rodape .logo{display:block;width:min(100%,300px);color:var(--fg)}
+.rodape .logo svg{display:block;width:100%;height:auto}
+.rodape .sobre{display:grid;gap:14px;align-content:start;justify-items:start}
+.rodape .sobre p{color:var(--muted);max-width:34ch}
+.rodape dl{display:grid;gap:14px;align-content:start}
+.rodape dt{font:500 .74rem/1.3 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:4px}
+.rodape dd{user-select:all;overflow-wrap:anywhere}
+.rodape dd a{color:inherit;text-decoration:underline;text-decoration-color:var(--sol);text-decoration-thickness:2px;text-underline-offset:4px}
+.rodape nav{display:grid;gap:10px;align-content:start;justify-items:start}
+.rodape nav a{text-decoration:none;font-weight:600;border-bottom:2px solid transparent}
+.rodape nav a:hover{border-bottom-color:var(--sol)}
+.base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:20px 96px;border-top:2px solid var(--line);font:400 .76rem/1.5 var(--mono);color:var(--muted);letter-spacing:.04em}
+@media (max-width:820px){.rodape{grid-template-columns:minmax(0,1fr)}}
+
+/* botão flutuante */
+.zap{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;display:inline-flex;align-items:center;color:var(--papel);font:700 .98rem/1 var(--body);text-decoration:none;--accent:var(--sol);transition:transform .15s}
+.zap-txt{background:var(--zap);border:2px solid var(--papel);border-right:0;border-radius:1.7em 0 0 0;padding:.95em 2.7em .95em 1.35em;margin-right:-2.1em;white-space:nowrap}
+.zap-selo{position:relative;z-index:1;flex:none;width:70px;height:70px;display:grid;place-items:center}
+.zap-estrela{position:absolute;inset:0;width:100%;height:100%;overflow:visible;animation:zap-girar 16s linear infinite}
+.zap-estrela polygon{fill:var(--zap);stroke:var(--papel);stroke-width:3;stroke-linejoin:round}
+.zap-icone{position:relative;width:31px;height:31px;fill:var(--papel)}
+@keyframes zap-girar{to{transform:rotate(360deg)}}
+@media (hover:hover){.zap:hover{transform:scale(1.05)}}
+@media (max-width:600px){
+  /* no celular fica só o selo, para cobrir menos texto */
+  .zap-txt{display:none}
+  .zap-selo{width:62px;height:62px}
+  .zap-icone{width:28px;height:28px}
+}
+@media (prefers-reduced-motion:reduce){.zap-estrela{animation:none}}
+/* troca de página: uma cortina amarela sobe, cobre a tela e segue subindo na página nova */
+.troca{position:fixed;inset:0;z-index:90;display:grid;place-items:center;background:var(--sol);transform:translateY(101%);visibility:hidden;pointer-events:none}
+.troca svg{width:min(30vw,132px);height:auto;animation:zap-girar 2.6s linear infinite}
+.troca polygon{fill:var(--tinta)}
+.troca circle{fill:var(--sol)}
+html.troca-sai .troca{visibility:visible;animation:troca-cobrir .38s cubic-bezier(.6,0,.3,1) forwards}
+html.troca-entra .troca{visibility:visible;transform:none;animation:troca-sair .55s cubic-bezier(.7,0,.2,1) .14s forwards}
+@keyframes troca-cobrir{from{transform:translateY(101%)}to{transform:none}}
+@keyframes troca-sair{from{transform:none}to{transform:translateY(-101%)}}
+@keyframes troca-sumir{to{opacity:0;visibility:hidden}}
+@media (prefers-reduced-motion:reduce){
+  .troca svg{animation:none}
+  html.troca-sai .troca{animation:none;transform:none}
+  html.troca-entra .troca{animation:troca-sumir .2s forwards}
+}
+
+
+/* toque e clique: resposta visual em tudo que é tocável */
+a,button,summary,label,.capa{-webkit-tap-highlight-color:transparent}
+.btn,.chip > span{position:relative;overflow:hidden}
+.btn > .onda,.chip > span > .onda{position:absolute;display:block;padding:0;border:0;border-radius:50%;background:currentColor;opacity:.3;transform:scale(0);pointer-events:none;animation:onda .55s ease-out forwards}
+@keyframes onda{to{transform:scale(1);opacity:0}}
+.zap:active{transform:scale(.94)}
+.chip > span{transition:transform .12s,background .15s,color .15s}
+.chip input:active + span{transform:scale(.94)}
+.menu .lnk,.rodape nav a{transition:transform .1s,border-color .15s}
+.menu .lnk:active,.rodape nav a:active{border-bottom-color:var(--urucum);transform:translateY(1px)}
+.faq summary{transition:color .15s}
+.faq summary:active{color:var(--urucum)}
+.capa,a.capa{transition:transform .15s,border-color .18s,border-radius .18s}
+.capa:active,.capa.toca{border-color:var(--urucum);border-radius:var(--r) 0 var(--r) 0}
+.capa:active{transform:scale(.98)}
+.capa .an-toldo,.capa .an-barras rect,.capa .an-seta,.capa .an-pulso{transform-box:fill-box}
+.capa .an-toldo{transform-origin:50% 0}
+.capa .an-barras rect{transform-origin:50% 100%}
+.capa .an-seta,.capa .an-pulso{transform-origin:50% 50%}
+@media (prefers-reduced-motion:no-preference){
+  .capa.toca .an-toldo{animation:descer .7s cubic-bezier(.2,.8,.3,1.25)}
+  .capa.toca .an-pulso{animation:pulsar .6s .35s ease-out}
+  .capa.toca .an-barras rect{animation:crescer .6s cubic-bezier(.2,.8,.3,1.25) backwards}
+  .capa.toca .an-barras rect:nth-child(2){animation-delay:.05s}
+  .capa.toca .an-barras rect:nth-child(3){animation-delay:.1s}
+  .capa.toca .an-barras rect:nth-child(4){animation-delay:.15s}
+  .capa.toca .an-barras rect:nth-child(5){animation-delay:.2s}
+  .capa.toca .an-barras rect:nth-child(6){animation-delay:.25s}
+  .capa.toca .an-barras rect:nth-child(7){animation-delay:.3s}
+  .capa.toca .alta{stroke-dasharray:260;animation:tracar .8s ease-out}
+  .capa.toca .an-seta{animation:surgir .35s .65s cubic-bezier(.2,.8,.3,1.4) backwards}
+}
+@keyframes descer{from{transform:scaleY(0)}}
+@keyframes crescer{from{transform:scaleY(0)}}
+@keyframes pulsar{50%{transform:scale(1.1)}}
+@keyframes surgir{from{transform:scale(0)}}
+@keyframes tracar{from{stroke-dashoffset:260}}
+@media (prefers-reduced-motion:reduce){.onda{display:none}}
+
+/* abertura: a logo se monta (três quadrados viram o módulo) e um toque entra no site */
+html.intro-on,html.intro-on body{overflow:hidden}
+.intro{position:fixed;inset:0;z-index:100;width:100%;height:100%;margin:0;padding:24px;border:0;border-radius:0;display:grid;place-content:center;justify-items:center;gap:clamp(20px,4vh,36px);background:var(--tinta);color:var(--papel);font:inherit;cursor:pointer;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.intro[hidden]{display:none}
+.intro:focus-visible{outline:0}
+.intro svg{display:block;width:min(72vw,460px,56vh);height:auto;overflow:visible}
+.intro .in-q,.intro .in-miolo,.intro .in-zoom,.intro .in-giro,.intro .in-selo{transform-box:fill-box;transform-origin:50% 50%}
+.intro .in-q{fill:var(--sol)}
+.intro .in-q2{transform:rotate(30deg)}
+.intro .in-q3{transform:rotate(60deg)}
+.intro .in-miolo{fill:var(--tinta)}
+.intro .in-nome,.intro .in-selo{fill:var(--papel)}
+.intro-txt{display:grid;gap:10px;justify-items:center;text-align:center}
+.intro-lema{font:800 clamp(1.1rem,3.6vw,1.6rem)/1.1 var(--display);font-stretch:84%;color:var(--sol)}
+.intro-dica{font:500 .8rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--foot-muted)}
+.intro .in-q1{animation:in-nascer .55s cubic-bezier(.2,.8,.3,1.3) .15s backwards}
+.intro .in-q2{animation:in-abrir .7s cubic-bezier(.3,.7,.2,1.2) .55s backwards}
+.intro .in-q3{animation:in-abrir .7s cubic-bezier(.3,.7,.2,1.2) .7s backwards}
+.intro .in-miolo{animation:in-nascer .35s cubic-bezier(.2,.8,.3,1.4) 1.25s backwards}
+.intro .in-giro{animation:in-girar 60s linear 2.2s infinite}
+.intro .in-nome{animation:in-subir .6s cubic-bezier(.2,.8,.3,1) 1.45s backwards}
+.intro .in-selo{animation:in-selo .45s cubic-bezier(.2,.8,.3,1.3) 1.9s backwards}
+.intro-lema{animation:in-subir .5s ease-out 2.25s backwards}
+.intro-dica{animation:in-subir .5s ease-out 2.6s backwards,in-piscar 1.8s ease-in-out 3.2s infinite}
+@keyframes in-nascer{from{transform:scale(0)}}
+@keyframes in-abrir{from{transform:rotate(0deg);opacity:0}}
+@keyframes in-subir{from{transform:translateY(14px);opacity:0}}
+@keyframes in-selo{from{transform:scale(.5);opacity:0}}
+@keyframes in-girar{to{transform:rotate(360deg)}}
+@keyframes in-piscar{50%{opacity:.45}}
+.intro.saindo{pointer-events:none;opacity:0;transition:opacity .32s ease .82s}
+.intro.saindo .in-q,.intro.saindo .in-miolo,.intro.saindo .in-nome,.intro.saindo .in-selo,.intro.saindo .intro-lema,.intro.saindo .intro-dica{animation:none}
+.intro.saindo .in-nome,.intro.saindo .in-selo,.intro.saindo .intro-txt{opacity:0;transition:opacity .18s}
+.intro.saindo .in-miolo{transform:scale(0);transition:transform .22s ease-in}
+.intro.saindo .in-zoom{transform:scale(36);transition:transform .72s cubic-bezier(.7,0,.84,0) .1s}
+@media (prefers-reduced-motion:reduce){
+  .intro *{animation:none!important;transition:none!important}
+  .intro.saindo{transition:opacity .2s}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://macambiracriativa.com.br/#agencia","name":"Macambira Criativa","url":"https://macambiracriativa.com.br/","description":"Agência digital do Recife. Criação de sites e landing pages, web apps sob medida e gestão de tráfego pago, com branding e design. De Pernambuco pro mundo.","slogan":"De Pernambuco pro mundo","logo":"https://macambiracriativa.com.br/logo.svg","image":"https://macambiracriativa.com.br/og.png","telephone":"+5581999607812","email":"contato@macambiracriativa.com.br","address":{"@type":"PostalAddress","addressLocality":"Recife","addressRegion":"PE","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Recife"},{"@type":"State","name":"Pernambuco"},{"@type":"Country","name":"Brasil"}],"priceRange":"R$ 800 a R$ 10.000","sameAs":["https://www.instagram.com/macambiracriativa_/"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+5581999607812","email":"contato@macambiracriativa.com.br","availableLanguage":"pt-BR","url":"https://wa.me/5581999607812"},"knowsAbout":["Criação de sites","Landing pages","Web apps","Sistemas sob medida","Tráfego pago","Google Ads","Meta Ads","Branding","Design de interface"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Serviços","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Landing page ou site one-page","description":"Página única com foco em conversão para WhatsApp ou formulário.","provider":{"@id":"https://macambiracriativa.com.br/#agencia"}},"priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL","minPrice":800,"maxPrice":1800},"url":"https://macambiracriativa.com.br/precos.html"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Site institucional completo","description":"Site institucional com design sob medida, rápido e responsivo.","provider":{"@id":"https://macambiracriativa.com.br/#agencia"}},"priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL","minPrice":2000,"maxPrice":4500},"url":"https://macambiracriativa.com.br/precos.html"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Web app ou sistema sob medida","description":"Aplicações web, painéis e ferramentas personalizadas.","provider":{"@id":"https://macambiracriativa.com.br/#agencia"}},"priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL","minPrice":3500,"maxPrice":10000},"url":"https://macambiracriativa.com.br/precos.html"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestão de tráfego pago","description":"Campanhas no Google Ads e Meta Ads, com rastreamento de conversões e relatórios. Valor mensal.","provider":{"@id":"https://macambiracriativa.com.br/#agencia"}},"priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL","minPrice":800,"maxPrice":1500},"url":"https://macambiracriativa.com.br/precos.html"}]}},{"@type":"WebSite","@id":"https://macambiracriativa.com.br/#site","url":"https://macambiracriativa.com.br/","name":"Macambira Criativa","inLanguage":"pt-BR","publisher":{"@id":"https://macambiracriativa.com.br/#agencia"}},{"@type":"FAQPage","@id":"https://macambiracriativa.com.br/#faq","mainEntity":[{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Depende do escopo. As faixas de referência estão na página de preços e prazos. Para um valor fechado, é só chamar no WhatsApp e pedir um orçamento personalizado."}},{"@type":"Question","name":"Quanto tempo leva para ficar pronto?","acceptedAnswer":{"@type":"Answer","text":"Varia conforme o tipo de projeto, de alguns dias para uma landing page a algumas semanas para um sistema. Os prazos de referência estão na página de preços e prazos, e a data exata vai na proposta."}},{"@type":"Question","name":"Como funciona o pagamento?","acceptedAnswer":{"@type":"Answer","text":"Em sites e sistemas, 50% de entrada para iniciar e 50% na aprovação final, antes de publicar no seu domínio. Na gestão de tráfego, o pagamento é antecipado a cada ciclo de 30 dias."}},{"@type":"Question","name":"Posso pedir alterações durante o projeto?","acceptedAnswer":{"@type":"Answer","text":"Pode. Cada projeto inclui até 2 rodadas de revisão sem custo. Funcionalidades novas ou mudança completa de layout fora do briefing inicial são orçadas à parte."}},{"@type":"Question","name":"Depois da entrega, tem suporte?","acceptedAnswer":{"@type":"Answer","text":"Tem. Landing pages têm 15 dias de garantia e ajustes, sites institucionais têm 30 dias de garantia contra bugs e web apps têm 30 dias de suporte. Depois disso, há um plano de manutenção opcional."}},{"@type":"Question","name":"Vocês atendem empresas de fora de Pernambuco?","acceptedAnswer":{"@type":"Answer","text":"Sim. O atendimento é online, então trabalhamos com empresas de qualquer lugar do Brasil e de fora dele."}}]}]}</script>
+</head>
+<body>
+<div class="troca" aria-hidden="true"><svg viewBox="-52 -52 104 104"><polygon points="39.19,0.00 46.36,12.42 33.94,19.60 33.94,33.94 19.60,33.94 12.42,46.36 0.00,39.19 -12.42,46.36 -19.60,33.94 -33.94,33.94 -33.94,19.60 -46.36,12.42 -39.19,0.00 -46.36,-12.42 -33.94,-19.60 -33.94,-33.94 -19.60,-33.94 -12.42,-46.36 -0.00,-39.19 12.42,-46.36 19.60,-33.94 33.94,-33.94 33.94,-19.60 46.36,-12.42"/><circle r="11.5"/></svg></div>
+<script>
+(function () {
+  // chegou por um link interno: a cortina começa cobrindo a tela e sobe; sem âncora, a página abre no topo
+  var veio = false;
+  try { veio = sessionStorage.getItem('troca') === '1'; sessionStorage.removeItem('troca'); } catch (e) {}
+  if (veio) document.documentElement.classList.add('troca-entra');
+  if (!location.hash || location.hash.length < 2) { try { history.scrollRestoration = 'manual'; } catch (e) {} window.scrollTo(0, 0); }
+})();
+</script>
+<button class="intro" id="intro" type="button" hidden aria-label="Macambira Criativa, de Pernambuco pro mundo. Toque ou clique para entrar no site.">
+  <svg viewBox="0 0 446.9 361.38" aria-hidden="true">
+    <path class="in-nome" d="M16.5 272V241.9V219.2H29.9V238.7H30.7Q30.9 231 32.5 226.5Q34.1 222 36.95 219.95Q39.8 217.9 43.7 217.9Q47.8 217.9 50.3 220.05Q52.8 222.2 53.95 226.75Q55.1 231.3 54.8 238.7H55.6Q56.1 231 57.75 226.5Q59.4 222 62.3 219.95Q65.2 217.9 69.2 217.9Q72.6 217.9 75.1 219.3Q77.6 220.7 79.25 223.4Q80.9 226.1 81.75 230.25Q82.6 234.4 82.6 240V272H66.8V243.3Q66.8 239.5 66.45 237.1Q66.1 234.7 65.25 233.55Q64.4 232.4 62.9 232.4Q60.9 232.4 59.6 234.5Q58.3 236.6 57.75 240.35Q57.2 244.1 57.2 249.1V272H41.8V243Q41.8 239.3 41.45 237Q41.1 234.7 40.2 233.55Q39.3 232.4 37.9 232.4Q35.9 232.4 34.65 234.45Q33.4 236.5 32.8 240.35Q32.2 244.2 32.2 249.7V272ZM98.3 273.3Q94.8 273.3 91.9 271.8Q89 270.3 87.3 267.4Q85.6 264.5 85.6 260.1Q85.6 255.4 87.3 252.4Q89 249.4 91.75 247.5Q94.5 245.6 97.65 244.5Q100.8 243.4 103.5 242.7Q107 241.7 108.8 240.85Q110.6 240 111.25 238.85Q111.9 237.7 111.9 235.9Q111.9 233.1 110.6 231.65Q109.3 230.2 107.1 230.2Q105.4 230.2 104.1 231.3Q102.8 232.4 102.15 234.75Q101.5 237.1 101.8 241L87.1 239.6Q86.8 234 88.25 229.85Q89.7 225.7 92.5 223.05Q95.3 220.4 99.2 219.15Q103.1 217.9 107.7 217.9Q114.3 217.9 118.65 220.5Q123 223.1 125.15 228.2Q127.3 233.3 127.3 241V252.5Q127.3 255.8 127.3 259.05Q127.3 262.3 127.3 265.55Q127.3 268.8 127.3 272H113.7Q113.7 268.5 113.7 265.05Q113.7 261.6 113.7 257.9H113Q112.6 262.6 110.65 266.05Q108.7 269.5 105.55 271.4Q102.4 273.3 98.3 273.3ZM105.1 261.1Q106.4 261.1 107.6 260.5Q108.8 259.9 109.75 258.65Q110.7 257.4 111.25 255.6Q111.8 253.8 111.8 251.6V246.1L114.1 245Q113.3 246.3 112 247.1Q110.7 247.9 109.2 248.5Q107.7 249.1 106.25 249.7Q104.8 250.3 103.6 251.1Q102.4 251.9 101.7 253.1Q101 254.3 101 256.2Q101 258.8 102.25 259.95Q103.5 261.1 105.1 261.1ZM152.9 273.3Q146.7 273.3 142.45 271.15Q138.2 269 135.6 265.3Q133 261.6 131.85 256.7Q130.7 251.8 130.7 246.2Q130.7 240.6 131.85 235.55Q133 230.5 135.55 226.55Q138.1 222.6 142.35 220.3Q146.6 218 152.7 218Q160 218 164.4 221.15Q168.8 224.3 170.45 229.35Q172.1 234.4 171 240.3L157 241.7Q157.4 238.2 157 235.6Q156.6 233 155.45 231.55Q154.3 230.1 152.4 230.1Q150.8 230.1 149.7 231.1Q148.6 232.1 147.9 234Q147.2 235.9 146.85 238.6Q146.5 241.3 146.5 244.8Q146.5 250.4 147.2 254.15Q147.9 257.9 149.35 259.7Q150.8 261.5 153 261.5Q155.5 261.5 156.65 259.45Q157.8 257.4 158 254.35Q158.2 251.3 157.8 248.5L171.9 249.7Q172.7 254 172.15 258.2Q171.6 262.4 169.45 265.8Q167.3 269.2 163.25 271.25Q159.2 273.3 152.9 273.3ZM187.2 273.3Q183.7 273.3 180.8 271.8Q177.9 270.3 176.2 267.4Q174.5 264.5 174.5 260.1Q174.5 255.4 176.2 252.4Q177.9 249.4 180.65 247.5Q183.4 245.6 186.55 244.5Q189.7 243.4 192.4 242.7Q195.9 241.7 197.7 240.85Q199.5 240 200.15 238.85Q200.8 237.7 200.8 235.9Q200.8 233.1 199.5 231.65Q198.2 230.2 196 230.2Q194.3 230.2 193 231.3Q191.7 232.4 191.05 234.75Q190.4 237.1 190.7 241L176 239.6Q175.7 234 177.15 229.85Q178.6 225.7 181.4 223.05Q184.2 220.4 188.1 219.15Q192 217.9 196.6 217.9Q203.2 217.9 207.55 220.5Q211.9 223.1 214.05 228.2Q216.2 233.3 216.2 241V252.5Q216.2 255.8 216.2 259.05Q216.2 262.3 216.2 265.55Q216.2 268.8 216.2 272H202.6Q202.6 268.5 202.6 265.05Q202.6 261.6 202.6 257.9H201.9Q201.5 262.6 199.55 266.05Q197.6 269.5 194.45 271.4Q191.3 273.3 187.2 273.3ZM194 261.1Q195.3 261.1 196.5 260.5Q197.7 259.9 198.65 258.65Q199.6 257.4 200.15 255.6Q200.7 253.8 200.7 251.6V246.1L203 245Q202.2 246.3 200.9 247.1Q199.6 247.9 198.1 248.5Q196.6 249.1 195.15 249.7Q193.7 250.3 192.5 251.1Q191.3 251.9 190.6 253.1Q189.9 254.3 189.9 256.2Q189.9 258.8 191.15 259.95Q192.4 261.1 194 261.1ZM220.5 272V241.9V219.2H233.9V238.7H234.7Q234.9 231 236.5 226.5Q238.1 222 240.95 219.95Q243.8 217.9 247.7 217.9Q251.8 217.9 254.3 220.05Q256.8 222.2 257.95 226.75Q259.1 231.3 258.8 238.7H259.6Q260.1 231 261.75 226.5Q263.4 222 266.3 219.95Q269.2 217.9 273.2 217.9Q276.6 217.9 279.1 219.3Q281.6 220.7 283.25 223.4Q284.9 226.1 285.75 230.25Q286.6 234.4 286.6 240V272H270.8V243.3Q270.8 239.5 270.45 237.1Q270.1 234.7 269.25 233.55Q268.4 232.4 266.9 232.4Q264.9 232.4 263.6 234.5Q262.3 236.6 261.75 240.35Q261.2 244.1 261.2 249.1V272H245.8V243Q245.8 239.3 245.45 237Q245.1 234.7 244.2 233.55Q243.3 232.4 241.9 232.4Q239.9 232.4 238.65 234.45Q237.4 236.5 236.8 240.35Q236.2 244.2 236.2 249.7V272ZM317.9 273.3Q314.5 273.3 311.85 271.5Q309.2 269.7 307.55 266Q305.9 262.3 305.2 256.5H304.4V272H290.9V249.4V203.3H306.6V215.2Q306.6 218.7 306.35 222.25Q306.1 225.8 305.65 229.25Q305.2 232.7 304.5 236.1H305.5Q306.3 229.9 308.05 225.9Q309.8 221.9 312.55 220Q315.3 218.1 318.8 218.1Q323.6 218.1 327 221.35Q330.4 224.6 332.25 230.75Q334.1 236.9 334.1 245.6Q334.1 255.3 331.95 261.4Q329.8 267.5 326.15 270.4Q322.5 273.3 317.9 273.3ZM312.8 261.2Q314.6 261.2 315.75 259.4Q316.9 257.6 317.5 254.25Q318.1 250.9 318.1 246.5Q318.1 241.7 317.55 238.3Q317 234.9 315.8 233.15Q314.6 231.4 312.8 231.4Q311.7 231.4 310.8 232.05Q309.9 232.7 309.1 233.95Q308.3 235.2 307.75 237Q307.2 238.8 306.85 241.1Q306.5 243.4 306.5 246.2V247.8Q306.5 250.6 307 253.05Q307.5 255.5 308.35 257.35Q309.2 259.2 310.3 260.2Q311.4 261.2 312.8 261.2ZM338 272V219.2H353.7V272ZM345.7 215.5Q341.3 215.5 338.9 213.65Q336.5 211.8 336.5 208.3Q336.5 204.8 338.9 202.9Q341.3 201 345.7 201Q350.3 201 352.65 202.9Q355 204.8 355 208.3Q355 211.8 352.65 213.65Q350.3 215.5 345.7 215.5ZM358.3 272V242.7V219.2H372.3V239.6H373.1Q373.3 231.4 374.9 226.85Q376.5 222.3 379.1 220.45Q381.7 218.6 384.8 218.6Q385.7 218.6 386.6 218.8Q387.5 219 388.4 219.5L387.7 236.9Q386.6 236.4 385.35 236.1Q384.1 235.8 382.9 235.8Q380 235.8 378.05 237.25Q376.1 238.7 375.15 241.65Q374.2 244.6 374.2 249.4V272ZM401.7 273.3Q398.2 273.3 395.3 271.8Q392.4 270.3 390.7 267.4Q389 264.5 389 260.1Q389 255.4 390.7 252.4Q392.4 249.4 395.15 247.5Q397.9 245.6 401.05 244.5Q404.2 243.4 406.9 242.7Q410.4 241.7 412.2 240.85Q414 240 414.65 238.85Q415.3 237.7 415.3 235.9Q415.3 233.1 414 231.65Q412.7 230.2 410.5 230.2Q408.8 230.2 407.5 231.3Q406.2 232.4 405.55 234.75Q404.9 237.1 405.2 241L390.5 239.6Q390.2 234 391.65 229.85Q393.1 225.7 395.9 223.05Q398.7 220.4 402.6 219.15Q406.5 217.9 411.1 217.9Q417.7 217.9 422.05 220.5Q426.4 223.1 428.55 228.2Q430.7 233.3 430.7 241V252.5Q430.7 255.8 430.7 259.05Q430.7 262.3 430.7 265.55Q430.7 268.8 430.7 272H417.1Q417.1 268.5 417.1 265.05Q417.1 261.6 417.1 257.9H416.4Q416 262.6 414.05 266.05Q412.1 269.5 408.95 271.4Q405.8 273.3 401.7 273.3ZM408.5 261.1Q409.8 261.1 411 260.5Q412.2 259.9 413.15 258.65Q414.1 257.4 414.65 255.6Q415.2 253.8 415.2 251.6V246.1L417.5 245Q416.7 246.3 415.4 247.1Q414.1 247.9 412.6 248.5Q411.1 249.1 409.65 249.7Q408.2 250.3 407 251.1Q405.8 251.9 405.1 253.1Q404.4 254.3 404.4 256.2Q404.4 258.8 405.65 259.95Q406.9 261.1 408.5 261.1Z"/>
+    <path class="in-selo" fill-rule="evenodd" d="M136.41 294H331.57V326.3A21.08 21.08 0 0 1 310.49 347.38H115.33V315.08A21.08 21.08 0 0 1 136.41 294ZM142.67 333.44Q140.35 333.44 138.64 332.57Q136.92 331.71 135.98 330.06Q135.05 328.41 135.05 326.2V315.18Q135.05 312.94 135.98 311.31Q136.92 309.67 138.64 308.81Q140.35 307.94 142.67 307.94Q144.98 307.94 146.68 308.82Q148.38 309.71 149.31 311.32Q150.25 312.94 150.25 315.18H146.58Q146.58 313.24 145.56 312.22Q144.54 311.2 142.67 311.2Q140.8 311.2 139.76 312.22Q138.72 313.24 138.72 315.15V326.2Q138.72 328.1 139.76 329.14Q140.8 330.18 142.67 330.18Q144.54 330.18 145.56 329.14Q146.58 328.1 146.58 326.2H150.25Q150.25 328.41 149.31 330.04Q148.38 331.67 146.68 332.56Q144.98 333.44 142.67 333.44ZM158.31 333.1V308.28H166.09Q168.44 308.28 170.17 309.18Q171.91 310.08 172.88 311.71Q173.84 313.35 173.84 315.56Q173.84 318.04 172.57 319.86Q171.29 321.68 169.12 322.42L174.18 333.1H170L165.48 322.9H161.98V333.1ZM161.98 319.67H166.09Q167.93 319.67 169.02 318.56Q170.1 317.46 170.1 315.62Q170.1 313.72 169.02 312.63Q167.93 311.54 166.09 311.54H161.98ZM181.9 333.1V329.84H186.9V311.54H181.9V308.28H195.64V311.54H190.64V329.84H195.64V333.1ZM203.15 333.1 209.48 308.28H214.3L220.63 333.1H216.92L215.43 326.81H208.39L206.89 333.1ZM209.07 323.78H214.71L213.01 316.61Q212.57 314.71 212.28 313.29Q211.99 311.88 211.89 311.37Q211.79 311.88 211.52 313.29Q211.24 314.71 210.77 316.58ZM233.17 333.1V311.65H226.54V308.25H243.48V311.65H236.85V333.1ZM251.26 333.1V329.84H256.26V311.54H251.26V308.28H265V311.54H260V329.84H265V333.1ZM278.8 333.1 272.51 308.28H276.29L280.26 324.8Q280.64 326.27 280.93 327.71Q281.22 329.16 281.35 329.97Q281.49 329.16 281.74 327.71Q282 326.27 282.37 324.77L286.32 308.28H289.99L283.66 333.1ZM295.63 333.1 301.96 308.28H306.78L313.11 333.1H309.4L307.91 326.81H300.87L299.37 333.1ZM301.55 323.78H307.19L305.49 316.61Q305.05 314.71 304.76 313.29Q304.47 311.88 304.37 311.37Q304.27 311.88 304 313.29Q303.72 314.71 303.25 316.58Z"/>
+    <g class="in-zoom"><g class="in-giro"><rect class="in-q in-q1" x="168.3" y="36.85" width="110.31" height="110.31"/><rect class="in-q in-q2" x="168.3" y="36.85" width="110.31" height="110.31"/><rect class="in-q in-q3" x="168.3" y="36.85" width="110.31" height="110.31"/><circle class="in-miolo" cx="223.45" cy="92" r="25"/></g></g>
+  </svg>
+  <span class="intro-txt"><span class="intro-lema">De Pernambuco pro mundo</span><span class="intro-dica">Toque ou clique para entrar</span></span>
+</button>
+<script>
+(function () {
+  // Tela de abertura: aparece em toda entrada direta no site; links internos (com #âncora) pulam.
+  var el = document.getElementById('intro'), raiz = document.documentElement, saiu = false;
+  if (!el || (location.hash && location.hash.length > 1)) return;
+  el.hidden = false;
+  raiz.classList.add('intro-on');
+  function entrar() {
+    if (saiu) return;
+    saiu = true;
+    el.classList.add('saindo');
+    var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    setTimeout(function () { el.hidden = true; raiz.classList.remove('intro-on'); }, calmo ? 260 : 1180);
+  }
+  el.addEventListener('click', entrar);
+  document.addEventListener('keydown', function (e) { if (!e.metaKey && !e.ctrlKey && !e.altKey) entrar(); });
+  window.addEventListener('wheel', entrar, { passive: true });
+  window.addEventListener('touchmove', entrar, { passive: true });
+  try { el.focus({ preventScroll: true }); } catch (e) {}
+})();
+</script>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="#inicio" aria-label="Macambira Criativa, voltar ao início">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><g fill="currentColor"><rect x="4.5" y="4.5" width="15" height="15"/><rect x="4.5" y="4.5" width="15" height="15" transform="rotate(30 12 12)"/><rect x="4.5" y="4.5" width="15" height="15" transform="rotate(60 12 12)"/></g><circle class="miolo" cx="12" cy="12" r="3.4"/></svg>
+      <span>macambira<b>criativa</b></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a class="lnk" href="#inicio">Início</a>
+      <a class="lnk" href="#servicos">Serviços</a>
+      <a class="lnk" href="precos.html">Preços</a>
+      <a class="lnk" href="#processo">Processo</a>
+      <a class="lnk" href="#projetos">Projetos</a>
+      <a class="lnk" href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn topo-cta" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vim pelo site e quero pedir um orçamento.">Pedir orçamento</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="rot">Agência digital pernambucana · tecnologia + branding</p>
+      <h1>Sites, apps e anúncios que vendem. <span class="selo">Feitos em Pernambuco.</span></h1>
+      <p class="lead">A Macambira Criativa une tecnologia e inovação a branding e design. Páginas rápidas, sistemas sob medida e anúncios medidos pelo retorno, para transformar visitante em cliente.</p>
+      <div class="acoes">
+        <a class="btn" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vim pelo site e quero pedir um orçamento.">Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-o" href="#servicos">Conhecer os serviços</a>
+      </div>
+      <p class="estados">Recife, PE &rarr; Nordeste &rarr; Brasil &rarr; mundo</p>
+    </div>
+    <figure class="hero-arte">
+      <canvas id="sol" role="img" aria-label="Sol visto através de um muro de cobogó, com os módulos girando devagar"></canvas>
+      <figcaption>Cobogó: o tijolo vazado inventado em Pernambuco nos anos 1920. Módulo, grade e luz. Quase um pixel.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="faixa b-tinta" aria-hidden="true">
+  <div class="faixa-trilho">
+    <span>De Pernambuco pro mundo <b>✺</b> Sites <b>✺</b> Landing pages <b>✺</b> Web apps <b>✺</b> Tráfego pago <b>✺</b> Branding <b>✺</b> Design <b>✺</b> Tecnologia <b>✺</b></span>
+    <span>De Pernambuco pro mundo <b>✺</b> Sites <b>✺</b> Landing pages <b>✺</b> Web apps <b>✺</b> Tráfego pago <b>✺</b> Branding <b>✺</b> Design <b>✺</b> Tecnologia <b>✺</b></span>
+  </div>
+</div>
+
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <header class="cab">
+      <p class="rot">Serviços</p>
+      <h2>Três frentes. Uma marca só.</h2>
+      <p class="lead">Site, sistema e anúncio saem da mesma identidade. Quem vê seu anúncio reconhece seu site, e quem usa seu sistema reconhece sua marca.</p>
+    </header>
+
+    <div class="servs">
+      <article class="serv">
+        <div class="mot mot-sol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M0 0h40A40 40 0 0 1 0 40z"/></svg></div>
+        <h3>Sites e landing pages</h3>
+        <div class="serv-txt">
+          <p>Páginas e sites institucionais otimizados para converter visitantes em clientes. Design moderno, carregamento muito rápido e estrutura pensada para levar ao WhatsApp ou ao formulário de contato.</p>
+          <ul>
+            <li>Landing pages e sites institucionais</li>
+            <li>Design moderno, com a cara da marca</li>
+            <li>Mobile-first e carregamento rápido</li>
+            <li>Textos e botões que levam ao contato</li>
+          </ul>
+        </div>
+        <a class="btn btn-o" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Quero um orçamento para site ou landing page.">Quero um site</a>
+      </article>
+
+      <article class="serv">
+        <div class="mot mot-mar" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 0 0 40a20 20 0 0 0 0-40zm0 11a9 9 0 1 1 0 18a9 9 0 0 1 0-18z"/></svg></div>
+        <h3>Web apps e sistemas</h3>
+        <div class="serv-txt">
+          <p>Transformamos ideias e processos operacionais em aplicações web eficientes. Sistemas interativos, painéis e ferramentas sob medida que simplificam a rotina do seu negócio.</p>
+          <ul>
+            <li>Sistemas e painéis personalizados</li>
+            <li>Interface simples de usar</li>
+            <li>Seus processos organizados em um só lugar</li>
+            <li>30 dias de suporte após a entrega</li>
+          </ul>
+        </div>
+        <a class="btn btn-o" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Quero um orçamento para um web app ou sistema sob medida.">Quero um web app</a>
+      </article>
+
+      <article class="serv">
+        <div class="mot mot-uru" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M0 40L40 0v40z"/></svg></div>
+        <h3>Tráfego pago</h3>
+        <div class="serv-txt">
+          <p>Colocamos sua marca na frente dos clientes certos, no momento em que eles procuram pelo seu produto ou serviço. Campanhas no Google e na Meta otimizadas para vender mais e pagar menos por cliente.</p>
+          <ul>
+            <li>Google Ads e Meta Ads</li>
+            <li>Pixels, Tag Manager e eventos de conversão</li>
+            <li>A conta de anúncios é sua</li>
+            <li>Relatórios quinzenais ou mensais com foco em ROI</li>
+          </ul>
+        </div>
+        <a class="btn btn-o" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Quero um orçamento para gestão de tráfego pago.">Quero anunciar</a>
+      </article>
+
+      <article class="serv">
+        <div class="mot mot-tin" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M40 0A40 40 0 0 1 0 40A40 40 0 0 1 40 0z"/></svg></div>
+        <h3>Branding e design</h3>
+        <div class="serv-txt">
+          <p>A base de tudo. Identidade visual, tom de voz e design de interface entram em cada projeto, para o resultado ter cara própria.</p>
+          <ul>
+            <li>Identidade visual</li>
+            <li>Tom de voz e posicionamento</li>
+            <li>Design de interface (UI/UX)</li>
+            <li>Criativos para campanhas</li>
+          </ul>
+        </div>
+        <a class="btn btn-o" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Quero conversar sobre branding e design para a minha marca.">Falar sobre minha marca</a>
+      </article>
+    </div>
+    <p class="mais">Quer ter uma ideia de valores antes de conversar? <a href="precos.html">Veja preços e prazos</a>.</p>
+  </div>
+</section>
+
+<section class="sec b-mar" id="jeito">
+  <div class="wrap jeito">
+    <p class="rot">De Pernambuco pro mundo</p>
+    <h2 class="mega">Tecnologia de ponta com identidade de quem é daqui.</h2>
+    <p class="lead">Pernambuco sempre criou muito com o que tinha à mão: o cordel, o cobogó, o frevo, o manguebeat. A gente leva esse jeito de inventar para o digital, com método, dados e código bem escrito.</p>
+    <div class="pilares">
+      <div class="pilar">
+        <h3>Rápido e feito para converter</h3>
+        <p>Páginas leves, que abrem rápido no celular e levam o visitante a chamar no WhatsApp.</p>
+      </div>
+      <div class="pilar">
+        <h3>Rastreamento completo</h3>
+        <p>Pixels, Tag Manager e eventos de conversão configurados, para otimizar as campanhas com dado real.</p>
+      </div>
+      <div class="pilar">
+        <h3>A conta é sua</h3>
+        <p>A conta de anúncios fica no seu nome. Os relatórios mostram o retorno sobre o investimento, sem métrica de vaidade.</p>
+      </div>
+      <div class="pilar">
+        <h3>Design com cara própria</h3>
+        <p>Cada projeto nasce com identidade pensada para o seu público. Layout genérico fica de fora.</p>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Gostei do jeito de vocês e quero pedir um orçamento.">Pedir orçamento no WhatsApp</a>
+  </div>
+</section>
+
+<section class="sec" id="processo">
+  <div class="wrap">
+    <header class="cab">
+      <p class="rot">Como funciona</p>
+      <h2>Da primeira conversa ao ar em quatro passos.</h2>
+      <p class="lead">Você sabe em que etapa o projeto está e aprova antes de ir ao ar.</p>
+    </header>
+    <ol class="passos">
+      <li><h3>Conversa</h3><p>Você conta o que precisa pelo WhatsApp. A gente entende o negócio, o público e o objetivo.</p></li>
+      <li><h3>Proposta</h3><p>Você recebe escopo, prazo e valor fechados. Com 50% de entrada, o projeto começa.</p></li>
+      <li><h3>Criação</h3><p>Design e desenvolvimento andam juntos, com até 2 rodadas de revisão incluídas.</p></li>
+      <li><h3>Lançamento</h3><p>Depois da sua aprovação e dos 50% finais, publicamos no seu domínio e seguimos medindo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec b-surf" id="projetos">
+  <div class="wrap">
+    <header class="cab">
+      <p class="rot">Projetos</p>
+      <h2>Como a gente resolve na prática.</h2>
+      <p class="lead">Um projeto no ar, um em andamento e um estudo de conceito. Novos projetos entram aqui conforme forem entregues.</p>
+    </header>
+    <div class="projs">
+      <article class="proj">
+        <a class="capa" href="https://toplinetoldos.com.br/" target="_blank" rel="noopener" aria-label="Abrir o site da Top Line Toldos em outra aba"><svg viewBox="0 0 480 320" aria-hidden="true" data-desc="Ilustração do site da Top Line Toldos: janela de navegador com um toldo listrado, o título e o botão de orçamento">
+          <defs><pattern id="listras" x="40" width="80" height="8" patternUnits="userSpaceOnUse"><rect width="40" height="8" class="u"/><rect x="40" width="40" height="8" class="p"/></pattern></defs>
+          <rect width="480" height="320" class="s"/>
+          <rect x="40" y="34" width="400" height="300" class="p ln"/>
+          <circle cx="58" cy="50" r="5" class="t"/><circle cx="74" cy="50" r="5" class="t"/><circle cx="90" cy="50" r="5" class="t"/>
+          <rect x="150" y="41" width="180" height="18" rx="9" class="s"/>
+          <text x="240" y="54" text-anchor="middle" class="mono">toplinetoldos.com.br</text>
+          <path class="ln an-toldo" fill="url(#listras)" d="M40 66H440V112a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0a20 20 0 0 1-40 0Z"/>
+          <text x="64" y="178" class="disp" font-size="30">Toldos e coberturas</text>
+          <text x="64" y="211" class="disp" font-size="30">sob medida</text>
+          <rect x="64" y="232" width="150" height="8" class="h"/><rect x="64" y="248" width="110" height="8" class="h"/>
+          <path class="z an-pulso" d="M290 228h126v30a12 12 0 0 1-12 12H278v-30a12 12 0 0 1 12-12Z"/>
+          <text x="347" y="254" text-anchor="middle" class="bt" font-size="13">Pedir orçamento</text>
+        </svg></a>
+        <p class="rot">Projeto real · Site</p>
+        <h3>Top Line Toldos e Coberturas</h3>
+        <p class="txt">Site para uma fabricante de toldos e coberturas sob medida que atende o Recife e a Região Metropolitana, construído para levar o visitante ao pedido de orçamento.</p>
+        <ul>
+          <li>Botão de WhatsApp em todos os pontos da página</li>
+          <li>Formulário de orçamento e agendamento de visita técnica</li>
+          <li>Portfólio de obras, antes e depois e depoimentos de clientes</li>
+        </ul>
+        <p class="txt meta"><a href="https://toplinetoldos.com.br/" target="_blank" rel="noopener">Ver o site no ar &rarr;</a></p>
+      </article>
+      <article class="proj">
+        <a class="capa" href="estudo-saude.html" aria-label="Abrir o projeto Gestão APS"><svg viewBox="0 0 480 320" aria-hidden="true">
+          <rect width="480" height="320" class="m"/>
+          <rect x="40" y="34" width="400" height="300" class="p ln"/>
+          <rect x="40" y="34" width="84" height="300" class="t"/>
+          <path class="u" d="M74 52h16v12h12v16H90v12H74V80H62V64h12Z"/>
+          <rect x="58" y="116" width="48" height="8" rx="4" class="s"/><rect x="58" y="136" width="48" height="8" rx="4" class="pk"/><rect x="58" y="156" width="36" height="8" rx="4" class="pk"/><rect x="58" y="176" width="44" height="8" rx="4" class="pk"/>
+          <text x="146" y="68" class="disp" font-size="21">Atendimentos de hoje</text>
+          <rect x="146" y="82" width="150" height="18" rx="9" class="h"/><rect x="304" y="82" width="56" height="18" rx="9" class="s"/>
+          <rect x="146" y="114" width="84" height="56" class="s"/><rect x="156" y="126" width="36" height="6" class="t"/><rect x="156" y="142" width="56" height="16" class="t"/>
+          <rect x="238" y="114" width="84" height="56" class="m"/><rect x="248" y="126" width="36" height="6" class="p"/><rect x="248" y="142" width="44" height="16" class="p"/>
+          <rect x="330" y="114" width="84" height="56" class="u"/><rect x="340" y="126" width="36" height="6" class="p"/><rect x="340" y="142" width="50" height="16" class="p"/>
+          <g class="an-barras"><rect x="146" y="276" width="14" height="44" class="m"/><rect x="170" y="254" width="14" height="66" class="m"/><rect x="194" y="268" width="14" height="52" class="m"/><rect x="218" y="236" width="14" height="84" class="m"/><rect x="242" y="250" width="14" height="70" class="m"/><rect x="266" y="216" width="14" height="104" class="u"/><rect x="290" y="242" width="14" height="78" class="m"/></g>
+          <circle cx="342" cy="204" r="8" class="m"/><rect x="358" y="197" width="56" height="6" class="h"/><rect x="358" y="207" width="38" height="5" class="h"/><circle cx="342" cy="236" r="8" class="s"/><rect x="358" y="229" width="56" height="6" class="h"/><rect x="358" y="239" width="38" height="5" class="h"/><circle cx="342" cy="268" r="8" class="u"/><rect x="358" y="261" width="56" height="6" class="h"/><rect x="358" y="271" width="38" height="5" class="h"/><circle cx="342" cy="300" r="8" class="m"/><rect x="358" y="293" width="56" height="6" class="h"/><rect x="358" y="303" width="38" height="5" class="h"/>
+        </svg></a>
+        <p class="rot">Projeto em andamento · Web app</p>
+        <h3>Gestão APS</h3>
+        <p class="txt"><strong>Desafio:</strong> na atenção primária em saúde, as equipes de atendimento perdem tempo com cadastros, agendamentos e históricos em telas poluídas e lentas.</p>
+        <ul>
+          <li>Navegação rápida entre painel do cidadão e prontuário</li>
+          <li>Filtros em tempo real para buscar cadastros</li>
+          <li>Dashboard responsivo com os atendimentos do dia e do mês</li>
+        </ul>
+        <p class="txt meta"><strong>Meta:</strong> reduzir o tempo de atendimento por paciente, com uma interface que dispensa treinamento longo.<br><a class="ver" href="estudo-saude.html">Ver o projeto &rarr;</a></p>
+      </article>
+      <article class="proj">
+        <a class="capa" href="estudo-serralheria.html" aria-label="Abrir o estudo da campanha de serralheria"><svg viewBox="0 0 480 320" aria-hidden="true">
+          <rect width="480" height="320" class="t"/>
+          <rect x="40" y="36" width="400" height="44" rx="22" class="p"/>
+          <circle cx="68" cy="57" r="8" class="lnk"/><path d="M74 63l8 8" class="lnk"/>
+          <text x="94" y="64" class="bd" font-size="17">serralheria perto de mim</text>
+          <rect x="40" y="100" width="250" height="134" class="p"/>
+          <rect x="56" y="114" width="70" height="20" rx="10" class="s"/><text x="91" y="128" text-anchor="middle" class="mono">ANÚNCIO</text>
+          <text x="56" y="162" class="disp" font-size="20">Portões e estruturas</text>
+          <text x="56" y="185" class="disp" font-size="20">sob medida</text>
+          <path class="z" d="M66 196h124v16a10 10 0 0 1-10 10H56v-16a10 10 0 0 1 10-10Z"/>
+          <text x="123" y="214" text-anchor="middle" class="bt" font-size="12">Pedir orçamento</text>
+          <rect x="40" y="250" width="180" height="10" rx="5" class="pk"/><rect x="40" y="270" width="230" height="8" rx="4" class="pk2"/><rect x="40" y="288" width="200" height="8" rx="4" class="pk2"/>
+          <rect x="306" y="100" width="134" height="196" class="m"/>
+          <text x="320" y="124" class="mono pf">ORÇAMENTOS</text>
+          <rect x="320" y="276" width="106" height="3" class="pk"/>
+          <polyline points="320,258 346,242 370,248 396,206 418,160" class="alta"/>
+          <circle cx="320" cy="258" r="5" class="s"/><circle cx="346" cy="242" r="5" class="s"/><circle cx="370" cy="248" r="5" class="s"/><circle cx="396" cy="206" r="5" class="s"/>
+          <path class="s an-seta" d="M428 142l-24 8 16 16Z"/>
+        </svg></a>
+        <p class="rot">Conceito · Tráfego pago</p>
+        <h3>Serralheria e estruturas metálicas</h3>
+        <p class="txt"><strong>Desafio:</strong> negócio local investe em Google Ads, mas não recebe pedidos de orçamento qualificados no WhatsApp.</p>
+        <ul>
+          <li>Campanhas de pesquisa focadas em intenção de compra</li>
+          <li>Lista rigorosa de palavras-chave negativas</li>
+          <li>Anúncios por tipo de serviço e rastreamento de cliques no WhatsApp</li>
+        </ul>
+        <p class="txt meta"><strong>Meta:</strong> baixar o custo por clique e receber mais orçamentos qualificados com a mesma verba.<br><a class="ver" href="estudo-serralheria.html">Ver o estudo completo &rarr;</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec b-sol" id="briefing">
+  <div class="wrap">
+    <header class="cab">
+      <p class="rot">Orçamento</p>
+      <h2>Conte o que você precisa.</h2>
+      <p class="lead">Marque as opções e a mensagem sai pronta. É só enviar no WhatsApp.</p>
+    </header>
+    <div class="brief">
+      <form id="form-briefing" novalidate>
+        <fieldset>
+          <legend>Do que você precisa?</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" id="b-site" name="preciso" value="uma landing page"><span>Landing page</span></label>
+            <label class="chip"><input type="checkbox" id="b-app" name="preciso" value="um site institucional"><span>Site institucional</span></label>
+            <label class="chip"><input type="checkbox" id="b-ads" name="preciso" value="um web app ou sistema"><span>Web app ou sistema</span></label>
+            <label class="chip"><input type="checkbox" id="b-brand" name="preciso" value="gestão de tráfego pago"><span>Tráfego pago</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Em que momento você está?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" id="b-m1" name="momento" value="Estou começando do zero."><span>Começando do zero</span></label>
+            <label class="chip"><input type="radio" id="b-m2" name="momento" value="Já tenho marca e quero melhorar a presença digital."><span>Já tenho marca</span></label>
+            <label class="chip"><input type="radio" id="b-m3" name="momento" value="Já vendo online e quero escalar."><span>Quero escalar as vendas</span></label>
+          </div>
+        </fieldset>
+        <div class="campos">
+          <div class="campo"><label for="b-nome">Seu nome</label><input type="text" id="b-nome" name="nome" autocomplete="given-name" placeholder="Como te chamamos?"></div>
+          <div class="campo"><label for="b-empresa">Empresa</label><input type="text" id="b-empresa" name="empresa" autocomplete="organization" placeholder="Opcional"></div>
+        </div>
+      </form>
+      <div class="previa">
+        <p class="rot">Mensagem pronta</p>
+        <p class="msg" id="msg" aria-live="polite">Olá! Quero um orçamento. Vim pelo site.</p>
+        <a class="btn" id="enviar" href="https://wa.me/5581999607812" target="_blank" rel="noopener">Enviar briefing no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="faq-cab">
+      <p class="rot">Dúvidas</p>
+      <h2>Antes de fechar, você quer saber.</h2>
+      <a class="btn btn-o" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Tenho uma dúvida antes de pedir um orçamento.">Tirar dúvida no WhatsApp</a>
+    </div>
+    <div>
+      <details>
+        <summary>Quanto custa?</summary>
+        <p>Depende do escopo. As faixas de referência estão na página de <a href="precos.html">preços e prazos</a>. Para um valor fechado, é só chamar no WhatsApp e pedir um orçamento personalizado.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva para ficar pronto?</summary>
+        <p>Varia conforme o tipo de projeto, de alguns dias para uma landing page a algumas semanas para um sistema. Os prazos de referência estão na página de <a href="precos.html">preços e prazos</a>, e a data exata vai na proposta.</p>
+      </details>
+      <details>
+        <summary>Como funciona o pagamento?</summary>
+        <p>Em sites e sistemas, 50% de entrada para iniciar e 50% na aprovação final, antes de publicar no seu domínio. Na gestão de tráfego, o pagamento é antecipado a cada ciclo de 30 dias.</p>
+      </details>
+      <details>
+        <summary>Posso pedir alterações durante o projeto?</summary>
+        <p>Pode. Cada projeto inclui até 2 rodadas de revisão sem custo. Funcionalidades novas ou mudança completa de layout fora do briefing inicial são orçadas à parte.</p>
+      </details>
+      <details>
+        <summary>Depois da entrega, tem suporte?</summary>
+        <p>Tem. Landing pages têm 15 dias de garantia e ajustes, sites institucionais têm 30 dias de garantia contra bugs e web apps têm 30 dias de suporte. Depois disso, há um plano de manutenção opcional.</p>
+      </details>
+      <details>
+        <summary>Vocês atendem empresas de fora de Pernambuco?</summary>
+        <p>Sim. O atendimento é online, então trabalhamos com empresas de qualquer lugar do Brasil e de fora dele.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="b-tinta">
+  <div class="wrap">
+    <div class="fim">
+      <p class="rot">Bora?</p>
+      <p class="mega">Sua marca merece mais que <em>um site qualquer.</em></p>
+      <a class="btn" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vim pelo site e quero começar um projeto com vocês.">Chamar no WhatsApp</a>
+    </div>
+    <div class="rodape">
+      <div class="sobre">
+        <a class="logo" href="#inicio" aria-label="Macambira Criativa, voltar ao início"><svg viewBox="14 14 598.28 145.38" aria-hidden="true"><path style="fill:var(--sol)" fill-rule="evenodd" d="M146.04 86.69L156.9 105.5L138.09 116.37L138.09 138.09L116.37 138.09L105.5 156.9L86.69 146.04L67.88 156.9L57.01 138.09L35.29 138.09L35.29 116.37L16.48 105.5L27.34 86.69L16.48 67.88L35.29 57.01L35.29 35.29L57.01 35.29L67.88 16.48L86.69 27.34L105.5 16.48L116.37 35.29L138.09 35.29L138.09 57.01L156.9 67.88ZM109.99 86.69A23.3 23.3 0 1 0 63.39 86.69A23.3 23.3 0 1 0 109.99 86.69Z"/><path fill="currentColor" d="M195.88 86V55.9V33.2H209.28V52.7H210.08Q210.28 45 211.88 40.5Q213.48 36 216.33 33.95Q219.18 31.9 223.08 31.9Q227.18 31.9 229.68 34.05Q232.18 36.2 233.33 40.75Q234.48 45.3 234.18 52.7H234.98Q235.48 45 237.13 40.5Q238.78 36 241.68 33.95Q244.58 31.9 248.58 31.9Q251.98 31.9 254.48 33.3Q256.98 34.7 258.63 37.4Q260.28 40.1 261.13 44.25Q261.98 48.4 261.98 54V86H246.18V57.3Q246.18 53.5 245.83 51.1Q245.48 48.7 244.63 47.55Q243.78 46.4 242.28 46.4Q240.28 46.4 238.98 48.5Q237.68 50.6 237.13 54.35Q236.58 58.1 236.58 63.1V86H221.18V57Q221.18 53.3 220.83 51Q220.48 48.7 219.58 47.55Q218.68 46.4 217.28 46.4Q215.28 46.4 214.03 48.45Q212.78 50.5 212.18 54.35Q211.58 58.2 211.58 63.7V86ZM277.68 87.3Q274.18 87.3 271.28 85.8Q268.38 84.3 266.68 81.4Q264.98 78.5 264.98 74.1Q264.98 69.4 266.68 66.4Q268.38 63.4 271.13 61.5Q273.88 59.6 277.03 58.5Q280.18 57.4 282.88 56.7Q286.38 55.7 288.18 54.85Q289.98 54 290.63 52.85Q291.28 51.7 291.28 49.9Q291.28 47.1 289.98 45.65Q288.68 44.2 286.48 44.2Q284.78 44.2 283.48 45.3Q282.18 46.4 281.53 48.75Q280.88 51.1 281.18 55L266.48 53.6Q266.18 48 267.63 43.85Q269.08 39.7 271.88 37.05Q274.68 34.4 278.58 33.15Q282.48 31.9 287.08 31.9Q293.68 31.9 298.03 34.5Q302.38 37.1 304.53 42.2Q306.68 47.3 306.68 55V66.5Q306.68 69.8 306.68 73.05Q306.68 76.3 306.68 79.55Q306.68 82.8 306.68 86H293.08Q293.08 82.5 293.08 79.05Q293.08 75.6 293.08 71.9H292.38Q291.98 76.6 290.03 80.05Q288.08 83.5 284.93 85.4Q281.78 87.3 277.68 87.3ZM284.48 75.1Q285.78 75.1 286.98 74.5Q288.18 73.9 289.13 72.65Q290.08 71.4 290.63 69.6Q291.18 67.8 291.18 65.6V60.1L293.48 59Q292.68 60.3 291.38 61.1Q290.08 61.9 288.58 62.5Q287.08 63.1 285.63 63.7Q284.18 64.3 282.98 65.1Q281.78 65.9 281.08 67.1Q280.38 68.3 280.38 70.2Q280.38 72.8 281.63 73.95Q282.88 75.1 284.48 75.1ZM332.28 87.3Q326.08 87.3 321.83 85.15Q317.58 83 314.98 79.3Q312.38 75.6 311.23 70.7Q310.08 65.8 310.08 60.2Q310.08 54.6 311.23 49.55Q312.38 44.5 314.93 40.55Q317.48 36.6 321.73 34.3Q325.98 32 332.08 32Q339.38 32 343.78 35.15Q348.18 38.3 349.83 43.35Q351.48 48.4 350.38 54.3L336.38 55.7Q336.78 52.2 336.38 49.6Q335.98 47 334.83 45.55Q333.68 44.1 331.78 44.1Q330.18 44.1 329.08 45.1Q327.98 46.1 327.28 48Q326.58 49.9 326.23 52.6Q325.88 55.3 325.88 58.8Q325.88 64.4 326.58 68.15Q327.28 71.9 328.73 73.7Q330.18 75.5 332.38 75.5Q334.88 75.5 336.03 73.45Q337.18 71.4 337.38 68.35Q337.58 65.3 337.18 62.5L351.28 63.7Q352.08 68 351.53 72.2Q350.98 76.4 348.83 79.8Q346.68 83.2 342.63 85.25Q338.58 87.3 332.28 87.3ZM366.58 87.3Q363.08 87.3 360.18 85.8Q357.28 84.3 355.58 81.4Q353.88 78.5 353.88 74.1Q353.88 69.4 355.58 66.4Q357.28 63.4 360.03 61.5Q362.78 59.6 365.93 58.5Q369.08 57.4 371.78 56.7Q375.28 55.7 377.08 54.85Q378.88 54 379.53 52.85Q380.18 51.7 380.18 49.9Q380.18 47.1 378.88 45.65Q377.58 44.2 375.38 44.2Q373.68 44.2 372.38 45.3Q371.08 46.4 370.43 48.75Q369.78 51.1 370.08 55L355.38 53.6Q355.08 48 356.53 43.85Q357.98 39.7 360.78 37.05Q363.58 34.4 367.48 33.15Q371.38 31.9 375.98 31.9Q382.58 31.9 386.93 34.5Q391.28 37.1 393.43 42.2Q395.58 47.3 395.58 55V66.5Q395.58 69.8 395.58 73.05Q395.58 76.3 395.58 79.55Q395.58 82.8 395.58 86H381.98Q381.98 82.5 381.98 79.05Q381.98 75.6 381.98 71.9H381.28Q380.88 76.6 378.93 80.05Q376.98 83.5 373.83 85.4Q370.68 87.3 366.58 87.3ZM373.38 75.1Q374.68 75.1 375.88 74.5Q377.08 73.9 378.03 72.65Q378.98 71.4 379.53 69.6Q380.08 67.8 380.08 65.6V60.1L382.38 59Q381.58 60.3 380.28 61.1Q378.98 61.9 377.48 62.5Q375.98 63.1 374.53 63.7Q373.08 64.3 371.88 65.1Q370.68 65.9 369.98 67.1Q369.28 68.3 369.28 70.2Q369.28 72.8 370.53 73.95Q371.78 75.1 373.38 75.1ZM399.88 86V55.9V33.2H413.28V52.7H414.08Q414.28 45 415.88 40.5Q417.48 36 420.33 33.95Q423.18 31.9 427.08 31.9Q431.18 31.9 433.68 34.05Q436.18 36.2 437.33 40.75Q438.48 45.3 438.18 52.7H438.98Q439.48 45 441.13 40.5Q442.78 36 445.68 33.95Q448.58 31.9 452.58 31.9Q455.98 31.9 458.48 33.3Q460.98 34.7 462.63 37.4Q464.28 40.1 465.13 44.25Q465.98 48.4 465.98 54V86H450.18V57.3Q450.18 53.5 449.83 51.1Q449.48 48.7 448.63 47.55Q447.78 46.4 446.28 46.4Q444.28 46.4 442.98 48.5Q441.68 50.6 441.13 54.35Q440.58 58.1 440.58 63.1V86H425.18V57Q425.18 53.3 424.83 51Q424.48 48.7 423.58 47.55Q422.68 46.4 421.28 46.4Q419.28 46.4 418.03 48.45Q416.78 50.5 416.18 54.35Q415.58 58.2 415.58 63.7V86ZM497.28 87.3Q493.88 87.3 491.23 85.5Q488.58 83.7 486.93 80Q485.28 76.3 484.58 70.5H483.78V86H470.28V63.4V17.3H485.98V29.2Q485.98 32.7 485.73 36.25Q485.48 39.8 485.03 43.25Q484.58 46.7 483.88 50.1H484.88Q485.68 43.9 487.43 39.9Q489.18 35.9 491.93 34Q494.68 32.1 498.18 32.1Q502.98 32.1 506.38 35.35Q509.78 38.6 511.63 44.75Q513.48 50.9 513.48 59.6Q513.48 69.3 511.33 75.4Q509.18 81.5 505.53 84.4Q501.88 87.3 497.28 87.3ZM492.18 75.2Q493.98 75.2 495.13 73.4Q496.28 71.6 496.88 68.25Q497.48 64.9 497.48 60.5Q497.48 55.7 496.93 52.3Q496.38 48.9 495.18 47.15Q493.98 45.4 492.18 45.4Q491.08 45.4 490.18 46.05Q489.28 46.7 488.48 47.95Q487.68 49.2 487.13 51Q486.58 52.8 486.23 55.1Q485.88 57.4 485.88 60.2V61.8Q485.88 64.6 486.38 67.05Q486.88 69.5 487.73 71.35Q488.58 73.2 489.68 74.2Q490.78 75.2 492.18 75.2ZM517.38 86V33.2H533.08V86ZM525.08 29.5Q520.68 29.5 518.28 27.65Q515.88 25.8 515.88 22.3Q515.88 18.8 518.28 16.9Q520.68 15 525.08 15Q529.68 15 532.03 16.9Q534.38 18.8 534.38 22.3Q534.38 25.8 532.03 27.65Q529.68 29.5 525.08 29.5ZM537.68 86V56.7V33.2H551.68V53.6H552.48Q552.68 45.4 554.28 40.85Q555.88 36.3 558.48 34.45Q561.08 32.6 564.18 32.6Q565.08 32.6 565.98 32.8Q566.88 33 567.78 33.5L567.08 50.9Q565.98 50.4 564.73 50.1Q563.48 49.8 562.28 49.8Q559.38 49.8 557.43 51.25Q555.48 52.7 554.53 55.65Q553.58 58.6 553.58 63.4V86ZM581.08 87.3Q577.58 87.3 574.68 85.8Q571.78 84.3 570.08 81.4Q568.38 78.5 568.38 74.1Q568.38 69.4 570.08 66.4Q571.78 63.4 574.53 61.5Q577.28 59.6 580.43 58.5Q583.58 57.4 586.28 56.7Q589.78 55.7 591.58 54.85Q593.38 54 594.03 52.85Q594.68 51.7 594.68 49.9Q594.68 47.1 593.38 45.65Q592.08 44.2 589.88 44.2Q588.18 44.2 586.88 45.3Q585.58 46.4 584.93 48.75Q584.28 51.1 584.58 55L569.88 53.6Q569.58 48 571.03 43.85Q572.48 39.7 575.28 37.05Q578.08 34.4 581.98 33.15Q585.88 31.9 590.48 31.9Q597.08 31.9 601.43 34.5Q605.78 37.1 607.93 42.2Q610.08 47.3 610.08 55V66.5Q610.08 69.8 610.08 73.05Q610.08 76.3 610.08 79.55Q610.08 82.8 610.08 86H596.48Q596.48 82.5 596.48 79.05Q596.48 75.6 596.48 71.9H595.78Q595.38 76.6 593.43 80.05Q591.48 83.5 588.33 85.4Q585.18 87.3 581.08 87.3ZM587.88 75.1Q589.18 75.1 590.38 74.5Q591.58 73.9 592.53 72.65Q593.48 71.4 594.03 69.6Q594.58 67.8 594.58 65.6V60.1L596.88 59Q596.08 60.3 594.78 61.1Q593.48 61.9 591.98 62.5Q590.48 63.1 589.03 63.7Q587.58 64.3 586.38 65.1Q585.18 65.9 584.48 67.1Q583.78 68.3 583.78 70.2Q583.78 72.8 585.03 73.95Q586.28 75.1 587.88 75.1Z"/><path fill="currentColor" fill-rule="evenodd" d="M218.46 106H413.62V138.3A21.08 21.08 0 0 1 392.54 159.38H197.38V127.08A21.08 21.08 0 0 1 218.46 106ZM224.72 145.44Q222.4 145.44 220.69 144.57Q218.97 143.71 218.03 142.06Q217.1 140.41 217.1 138.2V127.18Q217.1 124.94 218.03 123.31Q218.97 121.67 220.69 120.81Q222.4 119.94 224.72 119.94Q227.03 119.94 228.73 120.82Q230.43 121.71 231.36 123.32Q232.3 124.94 232.3 127.18H228.63Q228.63 125.24 227.61 124.22Q226.59 123.2 224.72 123.2Q222.85 123.2 221.81 124.22Q220.77 125.24 220.77 127.15V138.2Q220.77 140.1 221.81 141.14Q222.85 142.18 224.72 142.18Q226.59 142.18 227.61 141.14Q228.63 140.1 228.63 138.2H232.3Q232.3 140.41 231.36 142.04Q230.43 143.67 228.73 144.56Q227.03 145.44 224.72 145.44ZM240.36 145.1V120.28H248.14Q250.49 120.28 252.22 121.18Q253.96 122.08 254.93 123.71Q255.89 125.35 255.89 127.56Q255.89 130.04 254.62 131.86Q253.34 133.68 251.17 134.42L256.23 145.1H252.05L247.53 134.9H244.03V145.1ZM244.03 131.67H248.14Q249.98 131.67 251.07 130.56Q252.15 129.46 252.15 127.62Q252.15 125.72 251.07 124.63Q249.98 123.54 248.14 123.54H244.03ZM263.95 145.1V141.84H268.95V123.54H263.95V120.28H277.69V123.54H272.69V141.84H277.69V145.1ZM285.2 145.1 291.53 120.28H296.35L302.68 145.1H298.97L297.48 138.81H290.44L288.94 145.1ZM291.12 135.78H296.76L295.06 128.61Q294.62 126.71 294.33 125.29Q294.04 123.88 293.94 123.37Q293.84 123.88 293.57 125.29Q293.29 126.71 292.82 128.58ZM315.22 145.1V123.65H308.59V120.25H325.53V123.65H318.9V145.1ZM333.31 145.1V141.84H338.31V123.54H333.31V120.28H347.05V123.54H342.05V141.84H347.05V145.1ZM360.85 145.1 354.56 120.28H358.34L362.31 136.8Q362.69 138.27 362.98 139.71Q363.27 141.16 363.4 141.97Q363.54 141.16 363.79 139.71Q364.05 138.27 364.42 136.77L368.37 120.28H372.04L365.71 145.1ZM377.68 145.1 384.01 120.28H388.83L395.16 145.1H391.45L389.96 138.81H382.92L381.42 145.1ZM383.6 135.78H389.24L387.54 128.61Q387.1 126.71 386.81 125.29Q386.52 123.88 386.42 123.37Q386.32 123.88 386.05 125.29Q385.77 126.71 385.3 128.58Z"/></svg></a>
+        <p>Agência digital pernambucana. Sites, web apps e gestão de tráfego pago com branding e design na base.</p>
+      </div>
+      <dl>
+        <div><dt>WhatsApp</dt><dd>(81) 9 9960-7812</dd></div>
+        <div><dt>E-mail</dt><dd>contato@macambiracriativa.com.br</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/macambiracriativa_/" target="_blank" rel="noopener">@macambiracriativa_</a></dd></div>
+        <div><dt>Onde estamos</dt><dd>Recife, PE</dd></div>
+      </dl>
+      <nav aria-label="Rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="precos.html">Preços e prazos</a>
+        <a href="#jeito">Nosso jeito</a>
+        <a href="#processo">Processo</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#briefing">Orçamento</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+    </div>
+    <div class="base">
+      <span>&copy; <span id="ano">2026</span> Macambira Criativa</span>
+      <span>De Pernambuco pro mundo.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vim pelo site e quero pedir um orçamento." aria-label="Falar com a Macambira Criativa no WhatsApp"><span class="zap-txt">Entre em contato!</span><span class="zap-selo"><svg class="zap-estrela" viewBox="-52 -52 104 104" aria-hidden="true"><polygon points="39.19,0.00 46.36,12.42 33.94,19.60 33.94,33.94 19.60,33.94 12.42,46.36 0.00,39.19 -12.42,46.36 -19.60,33.94 -33.94,33.94 -33.94,19.60 -46.36,12.42 -39.19,0.00 -46.36,-12.42 -33.94,-19.60 -33.94,-33.94 -19.60,-33.94 -12.42,-46.36 -0.00,-39.19 12.42,-46.36 19.60,-33.94 33.94,-33.94 33.94,-19.60 46.36,-12.42"/></svg><svg class="zap-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span></a>
+
+<script>
+(function () {
+  // Troque aqui pelo número real: 55 + DDD + número, só dígitos.
+  var WHATSAPP = '5581999607812';
+  var zap = function (texto) { return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(texto); };
+
+  document.documentElement.lang = 'pt-BR';
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  document.querySelectorAll('[data-wa]').forEach(function (a) { a.href = zap(a.dataset.wa); });
+
+
+  // briefing -> mensagem de WhatsApp
+  var form = document.getElementById("form-briefing"), msg = document.getElementById('msg'), enviar = document.getElementById('enviar');
+  function lista(itens) {
+    if (itens.length < 2) return itens.join('');
+    return itens.slice(0, -1).join(', ') + ' e ' + itens[itens.length - 1];
+  }
+  function compor() {
+    var nome = form.elements.nome.value.trim(), emp = form.elements.empresa.value.trim();
+    var itens = Array.prototype.map.call(form.querySelectorAll('input[name="preciso"]:checked'), function (i) { return i.value; });
+    var mom = form.querySelector('input[name="momento"]:checked');
+    var t = 'Olá! ';
+    if (nome) t += 'Sou ' + nome + (emp ? ', da ' + emp : '') + '. ';
+    else if (emp) t += 'Falo pela ' + emp + '. ';
+    t += itens.length ? 'Preciso de ' + lista(itens) + '. ' : 'Quero um orçamento. ';
+    if (mom) t += mom.value + ' ';
+    t += 'Vim pelo site.';
+    msg.textContent = t;
+    enviar.href = zap(t);
+  }
+  form.addEventListener('input', compor);
+  form.addEventListener('change', compor);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+  compor();
+
+  // sol atrás do muro de cobogó
+  var cv = document.getElementById('sol'), ctx = cv.getContext('2d');
+  var N = 12, corSol = '#D9340F', corMuro = 'rgba(23,18,14,.15)', visivel = true, raf = 0;
+  var parado = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sorte(x, y) {
+    var h = Math.imul(x + 11, 374761393) ^ Math.imul(y + 7, 668265263);
+    h = Math.imul(h ^ (h >>> 13), 1274126177);
+    return ((h ^ (h >>> 16)) >>> 0) / 4294967295;
+  }
+  function modulo(tipo, s) {
+    ctx.beginPath();
+    if (tipo === 0) { ctx.moveTo(0, 0); ctx.arc(0, 0, s, 0, Math.PI / 2); ctx.closePath(); }
+    else if (tipo === 1) { ctx.arc(0, 0, s, 0, Math.PI / 2); ctx.arc(s, s, s, Math.PI, Math.PI * 1.5); ctx.closePath(); }
+    else if (tipo === 2) { ctx.moveTo(s / 2, 0); ctx.lineTo(s, s / 2); ctx.lineTo(s / 2, s); ctx.lineTo(0, s / 2); ctx.closePath(); }
+    else if (tipo === 3) { ctx.arc(s / 2, s / 2, s / 2, 0, Math.PI * 2); ctx.moveTo(s * 0.72, s / 2); ctx.arc(s / 2, s / 2, s * 0.22, 0, Math.PI * 2, true); }
+    else if (tipo === 4) { ctx.moveTo(0, s); ctx.arc(s / 2, s, s / 2, Math.PI, 0); ctx.closePath(); }
+    else { ctx.moveTo(0, 0); ctx.lineTo(s, 0); ctx.lineTo(0, s); ctx.closePath(); }
+    ctx.fill(tipo === 3 ? 'evenodd' : 'nonzero');
+  }
+  function suave(x) { return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; }
+  function cores() {
+    var cs = getComputedStyle(cv);
+    corSol = cs.getPropertyValue('--hero-sun').trim() || corSol;
+    corMuro = cs.getPropertyValue('--hero-wall').trim() || corMuro;
+  }
+  function desenhar(t) {
+    var W = cv.width, c = W / N, s = c * 0.88, meio = N / 2, raio = N * 0.37;
+    ctx.clearRect(0, 0, W, W);
+    for (var y = 0; y < N; y++) {
+      for (var x = 0; x < N; x++) {
+        var dx = x + 0.5 - meio, dy = y + 0.5 - meio, d = Math.sqrt(dx * dx + dy * dy);
+        var r = sorte(x, y), tipo = Math.floor(sorte(y, x + 31) * 6);
+        var p = t / 7 - d * 0.09 + r * 0.12, k = Math.floor(p), f = p - k;
+        var giro = Math.floor(r * 4) + k + (f < 0.16 ? suave(f / 0.16) : 1);
+        ctx.fillStyle = d < raio ? corSol : corMuro;
+        ctx.save();
+        ctx.translate(x * c + c / 2, y * c + c / 2);
+        ctx.rotate(giro * Math.PI / 2);
+        ctx.translate(-s / 2, -s / 2);
+        modulo(tipo, s);
+        ctx.restore();
+      }
+    }
+  }
+  function medir() {
+    var w = cv.getBoundingClientRect().width || 480, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = cv.height = Math.round(w * dpr);
+    desenhar(performance.now() / 1000);
+  }
+  function quadro(agora) {
+    raf = 0;
+    desenhar(agora / 1000);
+    if (visivel && !parado) raf = requestAnimationFrame(quadro);
+  }
+  function tocar() { if (!raf && visivel && !parado) raf = requestAnimationFrame(quadro); }
+  function repintar() { cores(); desenhar(performance.now() / 1000); }
+
+  cores(); medir(); tocar();
+  if ('ResizeObserver' in window) new ResizeObserver(medir).observe(cv); else window.addEventListener('resize', medir);
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { visivel = es[0].isIntersecting; tocar(); }).observe(cv);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', repintar);
+  new MutationObserver(repintar).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  // toque e clique: onda de tinta nos botões e animação nas capas dos projetos
+  (function () {
+    var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.addEventListener('touchstart', function () {}, { passive: true }); // ativa :active no iOS
+    document.addEventListener('pointerdown', function (e) {
+      if (calmo || !e.target.closest) return;
+      var chip = e.target.closest('.chip');
+      var el = chip ? chip.querySelector('span') : e.target.closest('.btn');
+      if (!el) return;
+      var r = el.getBoundingClientRect(), d = Math.max(r.width, r.height) * 2.2, o = document.createElement('span');
+      o.className = 'onda';
+      o.style.cssText = 'width:' + d + 'px;height:' + d + 'px;left:' + (e.clientX - r.left - d / 2) + 'px;top:' + (e.clientY - r.top - d / 2) + 'px';
+      el.appendChild(o);
+      o.addEventListener('animationend', function () { o.remove(); });
+    }, { passive: true });
+    document.querySelectorAll('.capa').forEach(function (c) {
+      var t = 0;
+      function tocar() {
+        c.classList.remove('toca'); void c.offsetWidth; c.classList.add('toca');
+        clearTimeout(t); t = setTimeout(function () { c.classList.remove('toca'); }, 1400);
+      }
+      c.addEventListener('pointerdown', tocar);
+      c.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') tocar(); });
+    });
+  })();
+  // troca de página: cobre a tela com a cortina antes de ir para outra página do site
+  (function () {
+    var raiz = document.documentElement;
+    function topo() { try { window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); } catch (e) { window.scrollTo(0, 0); } }
+    if (!location.hash || location.hash.length < 2) { topo(); window.addEventListener('load', topo); }
+    document.addEventListener('click', function (e) {
+      if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || !e.target.closest) return;
+      var a = e.target.closest('a[href]');
+      if (!a || a.target === '_blank') return;
+      var h = a.getAttribute('href');
+      if (!/^estudo-[a-z0-9-]+\.html(#.*)?$/i.test(h)) return;   // cortina só ao abrir um estudo de projeto
+      var aqui = location.pathname.split('/').pop() || 'index.html';
+      if (h.split('#')[0] === aqui) return;
+      e.preventDefault();
+      try { sessionStorage.setItem('troca', '1'); } catch (err) {}
+      raiz.classList.remove('troca-entra');
+      raiz.classList.add('troca-sai');
+      var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      setTimeout(function () { location.href = a.href; }, calmo ? 60 : 400);
+    });
+    window.addEventListener('pageshow', function (e) { if (e.persisted) raiz.classList.remove('troca-sai', 'troca-entra'); });
+  })();
+})();
+</script>
+</body>
+</html>
