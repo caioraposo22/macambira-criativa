@@ -23,9 +23,15 @@
 <meta name="twitter:title" content="Macambira Criativa | Sites, web apps e tráfego pago no Recife">
 <meta name="twitter:description" content="Agência digital do Recife. Criação de sites e landing pages, web apps sob medida e gestão de tráfego pago, com branding e design. De Pernambuco pro mundo.">
 <meta name="twitter:image" content="https://macambiracriativa.com.br/og.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="preload" href="/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/hanken.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Bricolage Grotesque";src:url(/fonts/bricolage.woff2) format("woff2");font-weight:700 800;font-stretch:78% 90%;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(/fonts/hanken.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(/fonts/jetbrains-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(/fonts/jetbrains-500.woff2) format("woff2");font-weight:500;font-display:swap}
+</style>
+<script defer src="/_vercel/insights/script.js"></script>
 <style>
 :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 img{max-width:100%}
@@ -147,6 +153,10 @@ h3{font-size:1.35rem;line-height:1.1;font-weight:700;letter-spacing:-.01em}
 .hero-arte{width:100%;max-width:520px;justify-self:end;display:grid;gap:12px;min-width:0}
 .hero-arte canvas{display:block;width:100%;aspect-ratio:1;max-width:100%}
 .hero-arte figcaption{font:400 .74rem/1.5 var(--mono);color:var(--muted)}
+@media (min-width:701px){
+  .hero h1{font-size:clamp(2.6rem,min(7.4vw,9.2vh),6.25rem)}
+  .hero-in{padding-block:clamp(40px,min(6.5vw,8vh),92px)}
+}
 @media (max-width:700px){
   .hero-in{grid-template-columns:minmax(0,1fr)}
   .hero-arte{justify-self:start;max-width:440px}
@@ -293,6 +303,7 @@ a.capa{display:block}
 .previa{--btn-bg:var(--sol);--btn-fg:var(--tinta);--accent:var(--sol);background:var(--tinta);color:var(--papel);border-radius:0 34px 0 34px;padding:clamp(22px,3vw,32px);display:grid;gap:18px;justify-items:start}
 .previa .rot{color:var(--sol)}
 .previa p.msg{font-size:1.12rem;line-height:1.5;overflow-wrap:anywhere}
+@media (min-width:861px){.previa{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px)}}
 @media (max-width:860px){.brief{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:480px){.campos{grid-template-columns:minmax(0,1fr)}}
 
@@ -462,9 +473,12 @@ html.intro-on,html.intro-on body{overflow:hidden}
 </button>
 <script>
 (function () {
-  // Tela de abertura: aparece em toda entrada direta no site; links internos (com #âncora) pulam.
+  // Tela de abertura: só na primeira visita (volta a aparecer depois de 30 dias) e entra sozinha.
+  // Links internos (com #âncora) pulam. Clique, toque, tecla ou rolagem também pulam.
   var el = document.getElementById('intro'), raiz = document.documentElement, saiu = false;
   if (!el || (location.hash && location.hash.length > 1)) return;
+  var CHAVE = 'macambira-intro', DIAS30 = 2592000000;
+  try { var visto = +localStorage.getItem(CHAVE); if (visto && Date.now() - visto < DIAS30) return; localStorage.setItem(CHAVE, String(Date.now())); } catch (e) {}
   el.hidden = false;
   raiz.classList.add('intro-on');
   function entrar() {
@@ -478,6 +492,7 @@ html.intro-on,html.intro-on body{overflow:hidden}
   document.addEventListener('keydown', function (e) { if (!e.metaKey && !e.ctrlKey && !e.altKey) entrar(); });
   window.addEventListener('wheel', entrar, { passive: true });
   window.addEventListener('touchmove', entrar, { passive: true });
+  setTimeout(entrar, 3400);
   try { el.focus({ preventScroll: true }); } catch (e) {}
 })();
 </script>
@@ -509,7 +524,7 @@ html.intro-on,html.intro-on body{overflow:hidden}
       <h1>Sites, apps e anúncios que vendem. <span class="selo">Feitos em Pernambuco.</span></h1>
       <p class="lead">A Macambira Criativa une tecnologia e inovação a branding e design. Páginas rápidas, sistemas sob medida e anúncios medidos pelo retorno, para transformar visitante em cliente.</p>
       <div class="acoes">
-        <a class="btn" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vim pelo site e quero pedir um orçamento.">Pedir orçamento no WhatsApp</a>
+        <a class="btn" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vi o site de vocês e quero pedir um orçamento.">Pedir orçamento no WhatsApp</a>
         <a class="btn btn-o" href="#servicos">Conhecer os serviços</a>
       </div>
       <p class="estados">Recife, PE &rarr; Nordeste &rarr; Brasil &rarr; mundo</p>
@@ -849,7 +864,7 @@ html.intro-on,html.intro-on body{overflow:hidden}
   </div>
 </footer>
 
-<a class="zap" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Vim pelo site e quero pedir um orçamento." aria-label="Falar com a Macambira Criativa no WhatsApp"><span class="zap-txt">Entre em contato!</span><span class="zap-selo"><svg class="zap-estrela" viewBox="-52 -52 104 104" aria-hidden="true"><polygon points="39.19,0.00 46.36,12.42 33.94,19.60 33.94,33.94 19.60,33.94 12.42,46.36 0.00,39.19 -12.42,46.36 -19.60,33.94 -33.94,33.94 -33.94,19.60 -46.36,12.42 -39.19,0.00 -46.36,-12.42 -33.94,-19.60 -33.94,-33.94 -19.60,-33.94 -12.42,-46.36 -0.00,-39.19 12.42,-46.36 19.60,-33.94 33.94,-33.94 33.94,-19.60 46.36,-12.42"/></svg><svg class="zap-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span></a>
+<aside aria-label="Contato rápido"><a class="zap" href="https://wa.me/5581999607812" target="_blank" rel="noopener" data-wa="Olá! Encontrei vocês pelo site e quero um orçamento." aria-label="Falar com a Macambira Criativa no WhatsApp"><span class="zap-txt">Entre em contato!</span><span class="zap-selo"><svg class="zap-estrela" viewBox="-52 -52 104 104" aria-hidden="true"><polygon points="39.19,0.00 46.36,12.42 33.94,19.60 33.94,33.94 19.60,33.94 12.42,46.36 0.00,39.19 -12.42,46.36 -19.60,33.94 -33.94,33.94 -33.94,19.60 -46.36,12.42 -39.19,0.00 -46.36,-12.42 -33.94,-19.60 -33.94,-33.94 -19.60,-33.94 -12.42,-46.36 -0.00,-39.19 12.42,-46.36 19.60,-33.94 33.94,-33.94 33.94,-19.60 46.36,-12.42"/></svg><svg class="zap-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span></a></aside>
 
 <script>
 (function () {
